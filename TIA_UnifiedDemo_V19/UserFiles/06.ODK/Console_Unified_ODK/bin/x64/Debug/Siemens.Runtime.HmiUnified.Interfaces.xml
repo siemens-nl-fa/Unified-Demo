@@ -1,0 +1,3825 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Siemens.Runtime.HmiUnified.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarm">
+            <summary>
+            public interface IAlarm
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarm.Acknowledge(System.UInt32)">
+            <summary>
+            Acknowledges this Alarm.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarm.Disable">
+            <summary>
+            Disables this Alarm.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarm.Enable">
+            <summary>
+            Enables this Alarm.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarm.Reset(System.UInt32)">
+            <summary>
+            Resets this Alarm.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarm.Shelve">
+            <summary>
+            Shelves this Alarm.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarm.Unshelve">
+            <summary>
+            Unshelves this Alarm.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarm.Error">
+            <summary>
+            Gets or sets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarm.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarmSetResult">
+            <summary>
+            public interface IAlarmSetResult
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSetResult.SystemName">
+            <summary>
+            Gets the name of the system.
+            </summary>
+            <value>
+            The name of the system.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSetResult.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSetResult.InstanceId">
+            <summary>
+            Gets the instance identifier.
+            </summary>
+            <value>
+            The instance identifier.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSetResult.Error">
+            <summary>
+            Gets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnAlarmSetEventHandler">
+            <summary>
+            Callback function if set alarm completed
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="errorCode">The error code.</param>
+            <param name="values">The values.</param>
+            <param name="completed">if set to <c>true</c> [completed].</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarmSet">
+            <summary>
+            public interface  IAlarmSet
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+            <seealso cref="T:Siemens.Runtime.HmiUnified.IAlarm" />
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSet.OnAcknowledgeHandler">
+            <summary>
+            handler for OnAcknowledge Alarm event
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSet.OnResetHandler">
+            <summary>
+            handler for OnReset Alarm event
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSet.OnDisableHandler">
+            <summary>
+            handler for OnDisable Alarm event
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSet.OnEnableHandler">
+            <summary>
+            handler for OnEnable Alarm event
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSet.OnShelveHandler">
+            <summary>
+            handler for OnShelve Alarm event
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSet.OnUnshelveHandler">
+            <summary>
+            handler for OnUnshelve Alarm event
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Acknowledge">
+            <summary>
+            Acknowledges this AlarmSet.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Add(System.String,System.UInt32)">
+            <summary>
+            Adds the specified alarm by name.
+            </summary>
+            <param name="alarmName">Name of the alarm.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Remove(System.String,System.UInt32)">
+            <summary>
+            Removes the specified alarm by name.
+            </summary>
+            <param name="alarmName">Name of the alarm.</param>
+            
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSet.Item(System.String)">
+            <summary>
+            Gets or sets the <see cref="T:Siemens.Runtime.HmiUnified.IAlarm"/> with the specified alarm name.
+            </summary>
+            <value>
+            The <see cref="T:Siemens.Runtime.HmiUnified.IAlarm"/>.
+            </value>
+            <param name="alarmName">Name of the alarm.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Disable">
+            <summary>
+            Disables this AlarmSet.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Enable">
+            <summary>
+            Enables this AlarmSet.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Reset">
+            <summary>
+            Resets this AlarmSet.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Shelve">
+            <summary>
+            Shelves this AlarmSet.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Unshelve">
+            <summary>
+            Unshelves this AlarmSet.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSet.Count">
+            <summary>
+            get the Alarms count.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSet.Clear">
+            <summary>
+            clear the Alarms from list.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiAlarmSourceType">
+            <summary>
+            public enum HmiAlarmSourceType
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiAlarmState">
+            <summary>
+            public enum HmiAlarmState
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarmResult">
+            <summary>
+            public interface IAlarmResult
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AcknowledgementTime">
+            <summary>
+            Gets the acknowledgement time.
+            </summary>
+            <value>
+            The acknowledgement time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmClassName">
+            <summary>
+            Gets the alarm class.
+            </summary>
+            <value>
+            The alarm class.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmClassSymbol">
+            <summary>
+            Gets the alarm class symbol.
+            </summary>
+            <value>
+            The alarm class symbol.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmParameterValues">
+            <summary>
+            Gets the alarm parameter values.
+            </summary>
+            <value>
+            The alarm parameter values.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText1">
+            <summary>
+            Gets the alarm text1.
+            </summary>
+            <value>
+            The alarm text1.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText2">
+            <summary>
+            Gets the alarm text2.
+            </summary>
+            <value>
+            The alarm text2.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText3">
+            <summary>
+            Gets the alarm text3.
+            </summary>
+            <value>
+            The alarm text3.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText4">
+            <summary>
+            Gets the alarm text4.
+            </summary>
+            <value>
+            The alarm text4.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText5">
+            <summary>
+            Gets the alarm text5.
+            </summary>
+            <value>
+            The alarm text5.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText6">
+            <summary>
+            Gets the alarm text6.
+            </summary>
+            <value>
+            The alarm text6.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText7">
+            <summary>
+            Gets the alarm text7.
+            </summary>
+            <value>
+            The alarm text7.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText8">
+            <summary>
+            Gets the alarm text8.
+            </summary>
+            <value>
+            The alarm text8.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmText9">
+            <summary>
+            Gets the alarm text9.
+            </summary>
+            <value>
+            The alarm text9.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.Area">
+            <summary>
+            Gets the area.
+            </summary>
+            <value>
+            The area.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.BackColor">
+            <summary>
+            Gets the color of the back.
+            </summary>
+            <value>
+            The color of the back.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.ChangeReason">
+            <summary>
+            Gets the change reason.
+            </summary>
+            <value>
+            The change reason.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.ClearTime">
+            <summary>
+            Gets the clear time.
+            </summary>
+            <value>
+            The clear time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.Connection">
+            <summary>
+            Gets the connection.
+            </summary>
+            <value>
+            The connection.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.EventText">
+            <summary>
+            Gets the event text.
+            </summary>
+            <value>
+            The event text.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.InfoText">
+            <summary>
+            Gets the Info text.
+            </summary>
+            <value>
+            The Info text.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.Flashing">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Siemens.Runtime.HmiUnified.IAlarmResult"/> is flashing.
+            </summary>
+            <value>
+              <c>true</c> if flashing; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.InstanceID">
+            <summary>
+            Gets the instance identifier.
+            </summary>
+            <value>
+            The instance identifier.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.InvalidFlags">
+            <summary>
+            Gets the invalid flags.
+            </summary>
+            <value>
+            The invalid flags.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.LoopInAlarm">
+            <summary>
+            Gets the loop in alarm.
+            </summary>
+            <value>
+            The loop in alarm.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.ModificationTime">
+            <summary>
+            Gets the modification time.
+            </summary>
+            <value>
+            The modification time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.Origin">
+            <summary>
+            Gets the origin.
+            </summary>
+            <value>
+            The origin.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.Priority">
+            <summary>
+            Gets the priority.
+            </summary>
+            <value>
+            The priority.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.RaiseTime">
+            <summary>
+            Gets the raise time.
+            </summary>
+            <value>
+            The raise time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.ResetTime">
+            <summary>
+            Gets the reset time.
+            </summary>
+            <value>
+            The reset time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.SourceID">
+            <summary>
+            Gets the source identifier.
+            </summary>
+            <value>
+            The source identifier.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.State">
+            <summary>
+            Gets the state.
+            </summary>
+            <value>
+            The state.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.StateText">
+            <summary>
+            Gets the state text.
+            </summary>
+            <value>
+            The state text.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.SuppressionState">
+            <summary>
+            Gets the state of the suppression.
+            </summary>
+            <value>
+            The state of the suppression.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.SystemSeverity">
+            <summary>
+            Gets the system severity.
+            </summary>
+            <value>
+            The system severity.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.TextColor">
+            <summary>
+            Gets the color of the text.
+            </summary>
+            <value>
+            The color of the text.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.UserName">
+            <summary>
+            Gets the user.
+            </summary>
+            <value>
+            The user.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.UserResponse">
+            <summary>
+            Gets the user response.
+            </summary>
+            <value>
+            The user response.
+            </value>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Siemens.Runtime.HmiUnified.IAlarmResult.HostName" -->
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.Id">
+            <summary>
+            Gets the AlarmID.
+            </summary>
+            <value>
+            The AlarmID.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.SourceType">
+            <summary>
+            Gets the SourceType.
+            </summary>
+            <value>
+            The SourceType.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.DeadBand">
+            <summary>
+            Gets the DeadBand.
+            </summary>
+            <value>
+            The DeadBand.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.ValueLimit">
+            <summary>
+            Gets the value limit.
+            </summary>
+            <value>
+            The value limit.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.ValueQuality">
+            <summary>
+            Gets the value quality.
+            </summary>
+            <value>
+            The value quality.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.NotificationReason">
+            <summary>
+            Gets the Notification Reason .
+            </summary>
+            <value>
+            The Notification Reason .
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmResult.AlarmGroupID">
+            <summary>
+            gets the groud id of PLC alarm
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnAlarmHandler">
+            <summary>
+            Callback function if alarm is triggered
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="systemError">The system error.</param>
+            <param name="systemName">Name of the system.</param>
+            <param name="values">Collection with IAlarmResult</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnPendingAlarmCompleteHandler">
+            <summary>
+            Callback function if pending alarm is completed
+            </summary>
+            <param name="sender">The sender.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarmSubscription">
+            <summary>
+            public interface IAlarmSubscription
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSubscription.OnAlarmHandler">
+            <summary>
+            Handler for OnAlarm event
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmSubscription.OnPendingAlarmCompleteHandler">
+            <summary>
+            Handler for OnPendingAlarmComplete event
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSubscription.Start">
+            <summary>
+            Starts this Alarm Subscription.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmSubscription.Stop">
+            <summary>
+            Stops this Alarm Subscription.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSubscription.Filter">
+            <summary>
+            Gets or sets the filter.
+            </summary>
+            <value>
+            The filter.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSubscription.Language">
+            <summary>
+            Gets or sets the language.
+            </summary>
+            <value>
+            The language.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmSubscription.SystemNames">
+            <summary>
+            Gets or sets the system names.
+            </summary>
+            <value>
+            The system names.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarmTrigger">
+            <summary>
+            public interface IAlarmTrigger
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmTrigger.CreateOperatorInputInformation(System.Object,System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Create a message based Active Alarm (Operator Input notification) in the AlarmLog , which is displayed as event .
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmTrigger.CreateSystemAlarm(System.Object,System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Create a message based Active Alarm (System Alarm) which requires acknowledgement.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmTrigger.CreateSystemInformation(System.Object,System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)">
+            <summary>
+            Create a message based Active Alarm (System Information) in the AlarmLog.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ILoggedAlarmResult">
+            <summary>
+            public interface ILoggedAlarmResult
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AcknowledgementTime">
+            <summary>
+            Gets the acknowledgement time.
+            </summary>
+            <value>
+            The acknowledgement time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmClassName">
+            <summary>
+            Gets the alarm class.
+            </summary>
+            <value>
+            The alarm class.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmClassSymbol">
+            <summary>
+            Gets the alarm class symbol.
+            </summary>
+            <value>
+            The alarm class symbol.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmParameterValues">
+            <summary>
+            Gets the alarm parameter values.
+            </summary>
+            <value>
+            The alarm parameter values.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText1">
+            <summary>
+            Gets the alarm text1.
+            </summary>
+            <value>
+            The alarm text1.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText2">
+            <summary>
+            Gets the alarm text2.
+            </summary>
+            <value>
+            The alarm text2.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText3">
+            <summary>
+            Gets the alarm text3.
+            </summary>
+            <value>
+            The alarm text3.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText4">
+            <summary>
+            Gets the alarm text4.
+            </summary>
+            <value>
+            The alarm text4.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText5">
+            <summary>
+            Gets the alarm text5.
+            </summary>
+            <value>
+            The alarm text5.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText6">
+            <summary>
+            Gets the alarm text6.
+            </summary>
+            <value>
+            The alarm text6.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText7">
+            <summary>
+            Gets the alarm text7.
+            </summary>
+            <value>
+            The alarm text7.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText8">
+            <summary>
+            Gets the alarm text8.
+            </summary>
+            <value>
+            The alarm text8.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmText9">
+            <summary>
+            Gets the alarm text9.
+            </summary>
+            <value>
+            The alarm text9.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Area">
+            <summary>
+            Gets the area.
+            </summary>
+            <value>
+            The area.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.BackColor">
+            <summary>
+            Gets the color of the back.
+            </summary>
+            <value>
+            The color of the back.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.ChangeReason">
+            <summary>
+            Gets the change reason.
+            </summary>
+            <value>
+            The change reason.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.ClearTime">
+            <summary>
+            Gets the clear time.
+            </summary>
+            <value>
+            The clear time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Connection">
+            <summary>
+            Gets the connection.
+            </summary>
+            <value>
+            The connection.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.EventText">
+            <summary>
+            Gets the event text.
+            </summary>
+            <value>
+            The event text.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Flashing">
+            <summary>
+            Gets a value indicating whether this <see cref="T:Siemens.Runtime.HmiUnified.IAlarmResult"/> is flashing.
+            </summary>
+            <value>
+              <c>true</c> if flashing; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.InstanceID">
+            <summary>
+            Gets the instance identifier.
+            </summary>
+            <value>
+            The instance identifier.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.InvalidFlags">
+            <summary>
+            Gets the invalid flags.
+            </summary>
+            <value>
+            The invalid flags.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.LoopInAlarm">
+            <summary>
+            Gets the loop in alarm.
+            </summary>
+            <value>
+            The loop in alarm.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.ModificationTime">
+            <summary>
+            Gets the modification time.
+            </summary>
+            <value>
+            The modification time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Origin">
+            <summary>
+            Gets the origin.
+            </summary>
+            <value>
+            The origin.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Priority">
+            <summary>
+            Gets the priority.
+            </summary>
+            <value>
+            The priority.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.RaiseTime">
+            <summary>
+            Gets the raise time.
+            </summary>
+            <value>
+            The raise time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.ResetTime">
+            <summary>
+            Gets the reset time.
+            </summary>
+            <value>
+            The reset time.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.State">
+            <summary>
+            Gets the state.
+            </summary>
+            <value>
+            The state.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.StateText">
+            <summary>
+            Gets the state text.
+            </summary>
+            <value>
+            The state text.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.SuppressionState">
+            <summary>
+            Gets the state of the suppression.
+            </summary>
+            <value>
+            The state of the suppression.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.SystemSeverity">
+            <summary>
+            Gets the system severity.
+            </summary>
+            <value>
+            The system severity.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.TextColor">
+            <summary>
+            Gets the color of the text.
+            </summary>
+            <value>
+            The color of the text.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.UserName">
+            <summary>
+            Gets the user.
+            </summary>
+            <value>
+            The user.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.UserResponse">
+            <summary>
+            Gets the user response.
+            </summary>
+            <value>
+            The user response.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.ValueLimit">
+            <summary>
+            Gets the value limit.
+            </summary>
+            <value>
+            The value limit.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Error">
+            <summary>
+            Gets the error.
+            </summary>
+            <value>
+            The error.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmGroupName">
+            <summary>
+            Get the group name
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.Deadband">
+            <summary>
+            The dead band of the trigger tag
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.HostName">
+            <summary>
+            Name of the machine that hosts the originator of the alarm.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.InfoText">
+            <summary>
+            Gets the info text
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.StateMachine">
+            <summary>
+            Gets the state
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.ValueQuality">
+            <summary>
+            Gets or sets the tag quality.
+            </summary>
+            <value>
+            The quality.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.SingleAcknowledgement">
+            <summary>
+            Gets acknowledgement / true or false
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.LoggedAlarmStateObjectID">
+            <summary>
+            Get alarm id
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.ID">
+            <summary>
+            Gets alarm ID
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.SourceType">
+            <summary>
+            Gets source type
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedAlarmResult.AlarmGroupID">
+            <summary>
+            Gets group id
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnDataChangedAlarmLoggingHandler">
+            <summary>
+            Callback function if alarm changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="errorCode">The returned error code.</param>
+            <param name="values">Collection with ILoggedAlarmResult values.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnReadCompleteAlarmLoggingHandler">
+            <summary>
+            Callback function if read operation finished.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="errorCode">The returned error code.</param>
+            <param name="values">Collection with ILoggedAlarmResult values.</param>
+            <param name="completed">if it is set to <c>true</c> the read operation is completed.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarmLogging">
+            <summary>
+            public interface ILoggedAlarm
+            Get historical data
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmLogging.OnReadComplete">
+            <summary>
+            Event if read operation finished
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmLogging.AddComment(Siemens.Runtime.HmiUnified.ILoggedAlarmResult,System.UInt32,System.String)">
+            <summary>
+            Add a comment for a ILoggedAlarmResult.
+            </summary>
+            <param name="value">the alarm result which is to comment</param>
+            <param name="language">language id of the comment</param>
+            <param name="comment">the comment</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmLogging.Read(System.DateTime,System.DateTime,System.String,System.UInt32,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Read raw historical data synchronous from the PH system.
+            </summary>
+            <param name="begin">Start time</param>
+            <param name="end">End time</param>
+            <param name="filter">Set the filter</param>
+            <param name="language">language of alarm texts</param>
+            <param name="systemNames">Set system names / default: local system</param>
+            <returns>Collection of ILoggedAlarmResult objects</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmLogging.ReadAsync(System.DateTime,System.DateTime,System.String,System.UInt32,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Read raw historical data asynchronous from the PH system.
+            </summary>
+            <param name="begin">Start time</param>
+            <param name="end">End time</param>
+            <param name="filter">Set the filter</param>
+            <param name="language">language of alarm texts</param>
+            <param name="systemNames">Set system names / default: local system</param>
+            <returns></returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAlarmLoggingSubscription">
+            <summary>
+            public interface ILoggedAlarmSubscription
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IAlarmLoggingSubscription.OnDataChanged">
+            <summary>
+            Event if alarm changed
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmLoggingSubscription.Language">
+            <summary>
+            Gets or sets the language.
+            </summary>
+            <value>
+            The language.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmLoggingSubscription.Filter">
+            <summary>
+            Gets the filter.
+            </summary>
+            <value>
+            The filter.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAlarmLoggingSubscription.SystemNames">
+            <summary>
+            Gets or sets the system names.
+            </summary>
+            <value>
+            The system names.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmLoggingSubscription.Start">
+            <summary>
+            This function is intended to be used to update the client software with new data as it becomes available; e.g.
+            update a alarm table.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IAlarmLoggingSubscription.Stop">
+            <summary>
+            Cancel all subscribed alarms.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiConnectionState">
+            <summary>
+            enum for HmiConnectionState
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiConnectionEstablishmentMode">
+            <summary>
+            enum for HmiConnectionEstablishmentMode
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiTimeSynchronizationMode">
+            <summary>
+            enum for HmiTimeSynchronizationMode
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ConnectionMode">
+            <summary>
+            enum for ConnectionMode
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.ConnectionState">
+            <summary>
+            Gets the ConnectionState.
+            </summary>
+            <value>
+            The ConnectionState.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.EstablishmentMode">
+            <summary>
+            Gets the EstablishmentMode.
+            </summary>
+            <value>
+            EstablishmentMode.
+            </value>     
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.TimeSynchronizationMode">
+            <summary>
+            Gets the TimeSynchronizationModee.
+            </summary>
+            <value>
+            TheTimeSynchronizationMode.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.DisabledAtStartup">
+            <summary>
+            Gets a value indicating whether [disable at start up].
+            </summary>
+            <value>
+              <c>true</c> if [disable at start up]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.Enabled">
+            <summary>
+            Gets a value indicating [Enabled].
+            </summary>
+            <value>
+              <c>true</c> if [Enabled]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.ConnectionType">
+            <summary>
+            Gets the ConnectionType.
+            </summary>
+            <value>
+            The ConnectionType.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionResult.Error">
+            <summary>
+            Gets the Error.
+            </summary>
+            <value>
+            The Error.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionStatusResult.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionStatusResult.ConnectionStatus">
+            <summary>
+            Gets the ConnectionStatus.
+            </summary>
+            <value>
+            The ConnectionStatus.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionStatusResult.Error">
+            <summary>
+            Gets the Error.
+            </summary>
+            <value>
+            The Error.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionSet.ContextId">
+            <summary>  
+             Interface method exposed to set and get context id
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnectionSet.Add(System.Collections.Generic.ICollection{System.String})">
+            <summary>  
+             Interface method exposed to Add Connections
+            </summary>
+            <param name="propertyName"> ICollection connectionNames - Connection name</param>
+            <returns> CF_SUCCESS/CF_ERROR</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnectionSet.Remove(System.String)">
+            <summary>  
+             Interface method exposed to Remove Connection from list of connections
+            </summary>
+            <param name="propertyName"> string connectionName - connection Name </param>
+            <returns> CF_SUCCESS/CF_ERROR</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnectionSet.Clear">
+            <summary>  
+             Interface method exposed to clear all the connections
+            </summary>
+            <returns> CF_SUCCESS/CF_ERROR</returns>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IConnectionSet.Count">
+            <summary>  
+             Interface method exposed to get Connections count
+            </summary>
+            <returns> CF_SUCCESS/CF_ERROR</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnectionSet.Read">
+            <summary>  
+             Interface method exposed to Read connections synchronously
+            </summary>
+            <returns> IList</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnectionSet.ReadAsync">
+            <summary>  
+             Interface method exposed to Read connection asynchronously
+            </summary>
+            <returns> CF_SUCCESS/CF_ERROR</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnectionSet.GetConnectionState">
+            <summary>  
+             Interface method exposed to GetConnectionState of  connections synchronously
+            </summary>
+            <returns> CF_SUCCESS/CF_ERROR</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Siemens.Runtime.HmiUnified.IConnectionSet.Subscribe" -->
+        <!-- Badly formed XML comment ignored for member "M:Siemens.Runtime.HmiUnified.IConnectionSet.CancelSubscribe" -->
+        <member name="P:Siemens.Runtime.HmiUnified.IConnection.Name">
+            <summary>  
+             Interface method exposed to set  Connection name
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnection.Read">
+            <summary>  
+             Interface method exposed to Read connections synchronously
+            </summary>
+            <returns> IConnectionResult</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnection.GetConnectionState">
+            <summary>  
+             Interface method exposed to GetConnectionState of  connections 
+            </summary>
+            <returns> IConnectionStatusResult</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IConnection.SetConnectionMode(Siemens.Runtime.HmiUnified.ConnectionMode)">
+            <summary>  
+             Interface method exposed to Set ConnectionMode of  connections 
+            </summary>
+            <param name="connectionmode">  Connectionmode </param>
+            <returns> CF_SUCCESS/CF_ERROR</returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiContextProviderType">
+            <summary>
+            List of provider type supported for context logging
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiContextProviderType.NoContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiContextProviderType.Calendar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiContextProviderType.PerformanceInsightMachineState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiContextProviderType.LineCoordinator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiContextProviderType.UserDefined">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiSortingMode">
+            <summary>
+            Sorting enum
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiSortingMode.Ascending">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiSortingMode.Descending">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IContextError">
+            <summary>
+            Interface for context defintion error
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextError.Name">
+            <summary>
+            Name of context defintion
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextError.Error">
+            <summary>
+            Error Code 
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IContextDefinition">
+            <summary>
+            Interface for context definition
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextDefinition.PlantViewPath">
+            <summary>
+            CPM node member ".hierarchy::Plant/Station"
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextDefinition.ProviderType">
+            <summary>
+            Provider type 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextDefinition.Name">
+            <summary>
+            name of the context definition
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextDefinition.DisplayNames">
+            <summary>
+            Display names of context definitions
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextDefinition.DataType">
+            <summary>
+            Datatype of the Context definition.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextDefinition.Error">
+            <summary>
+            Error code
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ILoggedContext">
+            <summary>
+            Interface for Logged Context
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.StartTime">
+            <summary>
+            Start time for Logged context instance
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.EndTime">
+            <summary>
+            End time for Logged context instance
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.Error">
+            <summary>
+            Error code
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.Value">
+            <summary>
+            Value of logged context instance
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.Quality">
+            <summary>
+            Quality code
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.Name">
+            <summary>
+            name of the context definition
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.ProviderType">
+            <summary>
+            context defintion provider type
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedContext.PlantViewPath">
+            <summary>
+            plant hierarchy path
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IContextFilter">
+            <summary>
+            filter cretation for reading logged context
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextFilter.Name">
+            <summary>
+            Context definition name
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextFilter.ProviderType">
+            <summary>
+            Provider type
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Siemens.Runtime.HmiUnified.IContextFilter.Operator" -->
+        <member name="P:Siemens.Runtime.HmiUnified.IContextFilter.Value">
+            <summary>
+            value for filter
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IContextFilter.PlantViewPath">
+            <summary>
+            CPM node member ".hierarchy::Plant/Station"
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnContextDefinitionCreateDelegate">
+            <summary>
+            Delegate for Create Context definition
+            </summary>
+            <param name="sender">IContext Logging</param>
+            <param name="systemName">SystemName has only valid value if global error exist</param>
+            <param name="globalError">Specific to particular system</param>
+            <param name="errors">list of context errors</param>
+            <param name="completed">false if still callback data is avalable e.g from different system</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnContextDefinitionReadReplyDelegate">
+            <summary>
+            Delegate for Read Context definition
+            </summary>
+            <param name="sender">IContext Logging</param>
+            <param name="systemName">SystemName has only valid value if global error exist</param>
+            <param name="globalError">Specific to particular system</param>
+            <param name="contextDefinitionData">list of context definitions</param>
+            <param name="completed">false if still callback data is avalable e.g from different system</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnContextReadReplyDelegate">
+            <summary>
+            Delegate for Read logged context
+            </summary>
+            <param name="sender">IContext Logging</param>
+            <param name="systemName">SystemName has only valid value if global error exist</param>
+            <param name="globalError">Specific to particular system</param>
+            <param name="loggedContexts">list of logged context</param>
+            <param name="completed">false if still callback data is avalable e.g from different system</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnContexDataChangedHandler">
+            <summary>
+            Delegate for Subscribe
+            </summary>
+            <param name="sender"></param>
+            <param name="loggedContexts"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IContextLogging">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IContextLogging.OnContextDefinitionCreate">
+            <summary>
+            Callback event for Create context definitions
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IContextLogging.OnContextDefinitionReadReply">
+            <summary>
+            callback even for Read Context definitions
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IContextLogging.OnLoggedContextReadReply">
+            <summary>
+            callback event for Read Logged context
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IContextLogging.OnContextDataChanged">
+            <summary>
+            callback event for subscribe.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.CreateContextDefinitions(System.Collections.Generic.ICollection{Siemens.Runtime.HmiUnified.IContextDefinition})">
+            <summary>
+            Creates contexts definions
+            </summary>
+            <param name="contextDefinitions">List of context definition</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.ReadContextDefinitions(System.Collections.Generic.ICollection{System.String},System.Collections.Generic.ICollection{Siemens.Runtime.HmiUnified.HmiContextProviderType},Siemens.Runtime.HmiUnified.HmiSortingMode)">
+            <summary>
+            Retrieves the list of Context Definitions that fulfill the query filter 
+            </summary>       
+            <param name="plantViewPaths">list of context defining objects used to retrieve the selected list of context definitions</param>
+            <param name="providerTypes">list of context provider types used to retrieve the selected list of context definitions</param>
+            <param name="sortingMode">sorting of result values retrieved from context definions</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.ReadContexts(System.DateTime,System.DateTime,Siemens.Runtime.HmiUnified.IContextFilter,Siemens.Runtime.HmiUnified.HmiSortingMode)">
+            <summary>
+            Retrieves the Logged Contexts that fulfill the query filter
+            </summary>
+            <param name="start">specifies the starting time of the interval to which a logged context must belong</param>
+            <param name="end">end time of the interval to which a logged context must belong</param>
+            <param name="ContextFilter">context Filter used to retrieve the selected list of context</param>
+            <param name="sortingMode">sorting of result values retrieved from context</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.StartContext(System.String,Siemens.Runtime.HmiUnified.HmiContextProviderType,System.String,System.Object,System.DateTime,System.UInt32)">
+            <summary>
+            Opens a new Logged Context with a specified context value
+            </summary>
+            <param name="contextName"> context definition identifier referenced by the new logged context</param>
+            <param name="providerType"> context definition identifier referenced by the new logged context</param>
+            <param name="plantViewPath"> Plant hierarchy path</param>
+            <param name="contextValue"> the value associated to the new logged context instance. 
+            The provided data type must be compatible to the context definition data type</param>
+            <param name="startTime">start timestamp of the new logged context instance,It can be in the past, but not in the future</param>
+            <param name="qualityCode">quality code associated to the value of the new logged context instance</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.StopContext(System.String,Siemens.Runtime.HmiUnified.HmiContextProviderType,System.String,System.DateTime)">
+            <summary>
+             Closes the currently opened Logged Context related to a Context Definition.
+            </summary>
+            <param name="contextName"> context definition identifier referenced by the new logged context</param>
+            <param name="providerType"> context definition identifier referenced by the new logged context</param>
+            <param name="plantViewPath"> Plant hierarchy path</param>
+            <param name="endtime">end timestamp of the opened logged context instance</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.Add(System.String,Siemens.Runtime.HmiUnified.HmiContextProviderType,System.String)">
+            <summary>
+            Adds the data of ContextName and providerType to a vector.
+            </summary>
+            <param name="contextName"></param>
+            <param name="providerType"></param>
+            <param name="plantViewPath"> Plant hierarchy path</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.Clear">
+            <summary>
+            Clear the data of the add function 
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.Subscribe">
+            <summary>
+            Subscribe the data for ContextLogging.
+            </summary>        
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IContextLogging.CancelSubscribe">
+            <summary>
+            Cancel Subscription.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OPNGeneralError">
+            <summary>
+            enum for OPN General Errors
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNGeneralError.None">
+            <summary>
+            Default value
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNGeneralError.Failed">
+            <summary>
+            Failed for unspecified reason
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNGeneralError.ConnectFailed">
+            <summary>
+            Connection to RT failed
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNGeneralError.TypeNotSupported">
+            <summary>
+            Type is not supported
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNGeneralError.UnknownName">
+            <summary>
+            Unknown name
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNGeneralError.LoadingFailed">
+            <summary>
+            A Loading operation failed
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNGeneralError.ResponseTimeOut">
+            <summary>
+            The response ran into timeout
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OPNTagError">
+            <summary>
+            enum for OPN Tag Errors
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.None">
+            <summary>
+            Default value
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.Failed">
+            <summary>
+            General error in Tag model occurred.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.InvalidArgument">
+            <summary>
+            Invalid arguments passed to function.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.AccessDenided">
+            <summary>
+            No access
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.InvalidCref">
+            <summary>
+            Invalid CRef found during conversion.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.InvalidObjectstate">
+            <summary>
+            Invalid object state
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.NotSupported">
+            <summary>
+            Function not supported.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.OutOfRange">
+            <summary>
+            The given value is out of range.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.NotExisting">
+            <summary>
+            The given tag does not exist.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.WriteFalse">
+            <summary>
+            The write operation was partly successful
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.ReadFalse">
+            <summary>
+            The read operation was partly successful
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.DuplicateCref">
+            <summary>
+            Duplicate CRef found during conversion.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.InvalidPointer">
+            <summary>
+            Function returned an invalid pointer
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.ConversionNotAllowed">
+            <summary>
+            Conversion not allowed
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.PLCNotConnected">
+            <summary>
+            PLC not connected
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.PLCProtocolError">
+            <summary>
+            The PLC protocol error
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.InvalidSubscription">
+            <summary>
+            Invalid tag subscription
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.NoInit">
+            <summary>
+            The no initialize
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.UnsupportedValueType">
+            <summary>
+            Unsupported value type
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNTagError.Exists">
+            <summary>
+            The given tag already exists
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OPNAlarmError">
+            <summary>
+            enum for OPN Alarm Errors
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.None">
+            <summary>
+            Default value
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.Failed">
+            <summary>
+            Cannot create alarm with specified tag
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.InvalidSubscription">
+            <summary>
+            The invalid alarm subscription
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.InvalidArgument">
+            <summary>
+            An argument is invalid
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.NoInit">
+            <summary>
+            There is no initialize
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.InvalidCref">
+            <summary>
+            Invalid CRef found
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.InvalidObjectState">
+            <summary>
+            The object state is invalid
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.WrongAlarmState">
+            <summary>
+            The alarm state is wrong
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.InvalidPointer">
+            <summary>
+            Function returned an invalid pointer
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.NotExisting">
+            <summary>
+            The alarm is not existing
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNAlarmError.DuplicateCref">
+            <summary>
+            The duplicate cref found
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OPNCPMError">
+            <summary>
+            enum for OPN CPM Errors
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.None">
+            <summary>
+            Default value
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.Failed">
+            <summary>
+            General error in CPM model occurred.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.InvalidArgument">
+            <summary>
+            An argument is invalid
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.NodeNotFound">
+            <summary>
+            The node is not found
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.NodeMemberNotFound">
+            <summary>
+            The node member is not found
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.InvalidPointer">
+            <summary>
+            Function returned an invalid pointer
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.NoMemory">
+            <summary>
+            The memory allocation failure occurred
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.InvalidObjectState">
+            <summary>
+            The object state is invalid
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.UnknownIdentifier">
+            <summary>
+            The Tag identifier is unknown
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.RequestRejected">
+            <summary>
+            The request was rejected
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.InvalidCref">
+            <summary>
+            Invalid CRef found
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.InvalidSubscription">
+            <summary>
+            The subscription is invalid
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNCPMError.NoInit">
+            <summary>
+            There is no initialize
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OPNLoggingError">
+            <summary>
+            enum for OPN TagLogging Errors
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.None">
+            <summary>
+            Default value
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.Failed">
+            <summary>
+            General error in TagLogging model occurred.
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.InvalidArgument">
+            <summary>
+            An argument is invalid
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.InvalidCref">
+            <summary>
+            Invalid CRef found
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.EmptyValue">
+            <summary>
+            The empty value
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.InvalidPointer">
+            <summary>
+            Function returned an invalid pointer
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.TimeOut">
+            <summary>
+            The operation time is out
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.NotImplemented">
+            <summary>
+            The function is not implemented
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.ConnectionLost">
+            <summary>
+            The connection to host is lost
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.NotSupported">
+            <summary>
+            The operation is not supported
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.OPNLoggingError.NotExist">
+            <summary>
+            The given tag does not exist
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IVersionInfo">
+            <summary>
+            Interface for VersionInfo
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IVersionInfo.Major">
+            <summary>
+            Gets the major version number.
+            </summary>
+            <value>
+            The major version number.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IVersionInfo.Minor">
+            <summary>
+            Gets the minor version number.
+            </summary>
+            <value>
+            The minor version number.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IVersionInfo.ServicePack">
+            <summary>
+            Gets the service pack version number.
+            </summary>
+            <value>
+            The service pack version number.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IVersionInfo.Update">
+            <summary>
+            Gets the update version number.
+            </summary>
+            <value>
+            The update version number.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IProduct">
+            <summary>
+            Interface for Product
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IProduct.Options">
+            <summary>
+            Gets the list with options.
+            </summary>
+            <value>
+            The list with options.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IProduct.Version">
+            <summary>
+            Gets the version info.
+            </summary>
+            <value>
+            The version info.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IOption">
+            <summary>
+            Interface for option
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IOption.Name">
+            <summary>
+            Gets the name of the option.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IOption.GetObject``1(System.Object[])">
+            <summary>
+            Gets the object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IOption.Version">
+            <summary>
+            Gets the version of the option.
+            </summary>
+            <value>
+            The version.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IRuntime">
+            <summary>
+            Interface for the runtime
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IRuntime.ProjectName">
+            <summary>
+            Gets the name of the project.
+            </summary>
+            <value>
+            The name of the project.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IRuntime.GetObject``1(System.Object[])">
+            <summary>
+            Gets the object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="parameters">The parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IRuntime.GetOption(System.String)">
+            <summary>
+            Gets the option by name
+            </summary>
+            <param name="optionName">Name of the option.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IRuntime.Product">
+            <summary>
+            Gets the product.
+            </summary>
+            <value>
+            The product.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IRuntime.UserName">
+            <summary>
+            Gets the name of the logged in user.
+            </summary>
+            <value>
+            The name of the user.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IErrorResult">
+            <summary>
+            Interface for the IActionErrorResult
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IErrorResult.Error">
+            <summary>
+            Gets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IErrorResult.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IErrorInfo">
+            <summary>
+            Interface for the IErrorInfo
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IErrorInfo.Error">
+            <summary>
+            Gets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IErrorInfo.GetErrorDescription(System.UInt32)">
+            <summary>
+            Gets the error description.
+            </summary>
+            <param name="Error">The error code.</param>
+            <returns>error description as string</returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OdkException">
+            <summary>
+            Represents errors that occur during execution of ODK functions.
+            </summary>
+            <seealso cref="T:System.Exception" />
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.OdkException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.Runtime.HmiUnified.OdkException"/> class.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.OdkException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.Runtime.HmiUnified.OdkException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.OdkException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.Runtime.HmiUnified.OdkException"/> class.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference if no inner exception is specified.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.OdkException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.Runtime.HmiUnified.OdkException"/> class.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.OdkException.ErrorSubCategory">
+            <summary>
+            Gets the error code of sub category.
+            </summary>
+            <value>
+            The error sub category.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.OdkException.ErrorCode">
+            <summary>
+            Gets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IPlantModel">
+            <summary>
+            public interface for ICpm
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantModel.GetPlantObject(System.String)">
+            <summary>
+            Gets the Plant object by path or ID.
+            </summary>
+            <param name="plantObject">The node path or node ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantModel.GetPlantObjectsByType(System.String,System.String)">
+            <summary>
+            Gets the list of Plant objectsByType.
+            </summary>
+            <param name="plantObjectTypeFilter">The Plant object type filter.</param>
+            <param name="viewFilter">The view filter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantModel.GetPlantObjectsByPropertyNames(System.Collections.Generic.ICollection{System.String},System.String)">
+            <summary>
+            Gets the list of Plant objectsByPropertyNames.
+            </summary>
+            <param name="propertyNames">The list with property names.</param>
+            <param name="viewFilter">The view filter.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantModel.GetPlantObjectsByExpression(System.Collections.Generic.ICollection{System.String},System.String,System.String,System.String)">
+            <summary>
+            Gets the list of Plant objectsByExpression.
+            </summary>
+            <param name="propertyNames">The list with property names.</param>
+            <param name="plantObjectTypeFilter">The Plant object type filter.</param>
+            <param name="expressionFilter">The expression filter.</param>
+            <param name="viewFilter">The view filter.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnPlantObjectSubscribeAlarmHandler">
+            <summary>
+             Callback function if alarm is triggered
+             </summary>
+             <param name="sender">The sender.</param>
+             <param name="systemError">The system error.</param>
+             <param name="systemName">Name of the system.</param>
+             <param name="values">Collection with IAlarmResult</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IPlantObjectAlarmSubscription">
+            <summary>
+            public interface for IPlantObjectAlarmSubscription
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IPlantObjectAlarmSubscription.OnPlantObjectSubscribeAlarmHandler">
+            <summary>
+            Handler for OnPlantObjectSubscribeAlarmHandler event
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Siemens.Runtime.HmiUnified.IPlantObjectAlarmSubscription.Start" -->
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectAlarmSubscription.Stop">
+            <summary>
+            Stops this Alarm Subscription.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectAlarmSubscription.Filter">
+            <summary>
+            Gets or sets the filter.
+            </summary>
+            <value>
+            The filter.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectAlarmSubscription.Language">
+            <summary>
+            Gets or sets the language.
+            </summary>
+            <value>
+            The language.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectAlarmSubscription.IncludeChildren">
+            <summary>
+            Gets or sets the IncludeChildren.
+            </summary>
+            <value>
+            The IncludeChildren.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnPlantObjectAlarmHandler">
+            <summary>
+            Callback function if alarm is triggered
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="systemError">The system error.</param>
+            <param name="systemName">Name of the system.</param>
+            <param name="values">Collection with IAlarmResult</param>
+            /// <param name="completed">nofication completed flag</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Siemens.Runtime.HmiUnified.IPlantObject" -->
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObject.Name">
+            <summary>
+            Gets the name of Plant object.
+            </summary>
+            <value>
+            The object name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObject.Parent">
+            <summary>
+            Gets the parent of Plant object.
+            </summary>
+            <value>
+            The parent.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObject.Children">
+            <summary>
+            Gets the child of Plant object.
+            </summary>
+            <value>
+            The parent.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObject.PlantViewPaths">
+            <summary>
+            Gets the all paths in all hierarchies
+            map(viewName, viewPath)
+            </summary>
+            <value>
+            The view paths contains dictonary of cpm view name and its path.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObject.CurrentPlantView">
+            <summary>
+            Gets or sets the current view name and path of Plant object.
+            </summary>k"
+            <value>
+            The current view contains Plant object view name.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObject.GetProperty(System.String)">
+            <summary>
+            Gets the property.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObject.GetProperties(System.Collections.Generic.ICollection{System.String})">
+            <summary>
+            Gets the properties.
+            </summary>
+            <param name="propertyNames">The property names.</param>
+            <returns>Collection as dictionary IPlantObjectPropertySet</returns>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IPlantObject.PlantObjectAlarmHandler">
+            <summary>
+            Handler for OnPlantObjectAlarmHandler event
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObject.GetActiveAlarms(System.UInt32,System.Boolean,System.String)">
+            <summary>
+            Gets all the active alarms for the current view path
+            </summary>
+            <param name="languageId">language id for alarm text</param>
+            <param name="filter">alarm filter string</param>
+            <returns>List of active alarms for the view path</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObject.CreateAlarmSubscription">
+            <summary>
+            Gets all the raised alarms for the current view path
+            </summary>
+            <returns>List of raised alarms for the view path</returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IPlantObjectProperty">
+            <summary>
+            public interface IPlantObjectProperty
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectProperty.Name">
+            <summary>
+            Gets the property name.
+            </summary>
+            <value>
+            The name as string.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectProperty.Read">
+            <summary>
+            Reads the node property.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectProperty.Write(System.Object)">
+            <summary>
+            Writes the specified value.
+            </summary>
+            <param name="Value">The value.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IPlantObjectPropertyValue">
+            <summary>
+            public interface for value of Plant object property
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertyValue.Name">
+            <summary>
+            Gets the value name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertyValue.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertyValue.Quality">
+            <summary>
+            Gets the value quality.
+            </summary>
+            <value>
+            The quality.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertyValue.TimeStamp">
+            <summary>
+            Gets the time stamp.
+            </summary>
+            <value>
+            The time stamp.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertyValue.Error">
+            <summary>
+            Gets the error code.
+            </summary>
+            <value>
+            The error.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnPropertySetReadCompleteHandler">
+            <summary>
+            Callback function if Property Set was read
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="errorCode">The error code.</param>
+            <param name="values">The list with node property values</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnPropertyWriteCompleteHandler">
+            <summary>
+            Callback function if Property Set was write
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="errorCode">The error code.</param>
+            <param name="values">The list with node property values</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnPlantModelPropertySubscriptionHandler">
+            <summary>
+            Callback function if Property Set was changed
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="values">The list with node property values</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet">
+            <summary>
+             public interface IPlantObjectPropertySet
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.ContextId">
+            <summary>
+            Gets or sets the context identifier.
+            </summary>
+            <value>
+            The context identifier.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Add(System.Collections.Generic.ICollection{System.String})">
+            <summary>
+            Adds the collection with property names to property set.
+            </summary>
+            <param name="propertyNames">The collection with property names.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Add(System.String,System.Object)">
+            <summary>
+            Adds the specified property.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <param name="value">The value of the property.</param>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Item(System.String)">
+            <summary>
+            Gets or sets the property value by name.
+            </summary>
+            <value>
+            The <see cref="T:System.Object"/>.
+            </value>
+            <param name="propertyName">Name of the property.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Remove(System.String)">
+            <summary>
+            Removes the property by name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Clear">
+            <summary>
+            Remove all properties.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Count">
+            <summary>
+            Gets the count of properties.
+            </summary>
+            <value>
+            The count.
+            </value>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.OnPropertySetReadComplete">
+            <summary>
+             Handler for asynchronous Read is complete.
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.OnPropertySetWriteComplete">
+            <summary>
+             Handler for asynchronous Write is complete..
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.OnPlantModelPropertySubscriptionNotification">
+            <summary>
+             Handler for CPM property subscription notification.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Read">
+            <summary>
+            Read property list from the node.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.ReadAsync">
+            <summary>
+            Asynchronous read property list from the node
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Write">
+            <summary>
+            Write property list of the node.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.WriteAsync">
+            <summary>
+            Asynchronous write property list of the node
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.Subscribe">
+            <summary>
+            Subscribes to the changes of the node.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IPlantObjectPropertySet.CancelSubscribe">
+            <summary>
+            Cancels the subscribe.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ITextList">
+            <summary>
+            public interface ITextList
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITextList.Name">
+            <summary> 
+            Set or Get TextList Name
+            </summary>
+            <value>
+            The TextList Name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITextList.TextListEntryIndex">
+            <summary> 
+            Set or Get TextList Entry Index
+            </summary>
+            <value>
+            The Entry Index.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.Runtime">
+            <summary>
+            ODK Runtime object, that's the main entry point to get other objects like ITag or IAlarm via GetObject().
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.Runtime.Product">
+            <summary>
+            Product information about this interface
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.Runtime.ProjectName">
+            <summary>
+            Project name of the connected runtime
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.Runtime.Connect(System.String)">
+            <summary>
+            Connect to a active runtime project
+            </summary>
+            <param name="value">Project name</param>
+            <returns>Runtime object</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.Runtime.Connect(System.String,System.String,System.String)">
+            <summary>
+            Connect to a active runtime project, that use credentials
+            </summary>
+            <param name="value">Project name</param>
+            <param name="userName">User name</param>
+            <param name="password">Password</param>
+            <returns>Runtime object</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.Runtime.Connect(System.String,System.String)">
+            <summary>
+            Connect to the local active runtime project, that use credentials
+            </summary>
+            <param name="userName">User name</param>
+            <param name="password">Password</param>
+            <returns>Runtime object</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.Runtime.Connect">
+            <summary>
+            Connect to the local active runtime project
+            </summary>
+            <returns>Runtime object</returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.Runtime.Dispose">
+            <summary>
+            Release resources
+            Public implementation of Dispose pattern callable by consumers.
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.Runtime.GetObject``1(System.Object[])">
+            <summary>
+            Constructor of dynamic elements like ITag or IAlarm
+            </summary>
+            <typeparam name="T">Type of object you like to get</typeparam>
+            <param name="parameters">Individual paramters for the object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.Runtime.GetOption(System.String)">
+            <summary>
+            Interface for option
+            </summary>
+            <param name="optionName">Option name</param>
+            <returns></returns>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.Runtime.UserName">
+            <summary>
+            Gets the name of the logged in user.
+            </summary>
+            <value>
+            The name of the user.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiReadType">
+            <summary>
+            HmiReadType enum
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiReadType.Cache">
+            <summary>
+            Read from Cache
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiReadType.Device">
+            <summary>
+            Read from Device(PLC)
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiSubstituteValueUsage">
+            <summary>
+            HmiSubstituteValueUsage enum
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiWriteType">
+            <summary>
+            HmiWriteType enum
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiWriteType.NoWait">
+            <summary>
+            Writes a tag value without waiting for a response of the server
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiWriteType.Wait">
+            <summary>
+            Writes a tag value and waits for a response of the server
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiAcquisitionMode">
+            <summary>
+            HmiAcquisitionMode enum
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IProcessValue">
+            <summary>
+            public interface IProcessValue to get the process value.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IProcessValue.Name">
+            <summary>
+            Gets the name of a process tag.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IProcessValue.Quality">
+            <summary>
+            Gets the quality code of a process tag.
+            </summary>
+            <value>
+            The quality code.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IProcessValue.TimeStamp">
+            <summary>
+            Gets the time stamp of a process tag.
+            </summary>
+            <value>
+            The time stamp.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IProcessValue.Value">
+            <summary>
+            Gets the process value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IProcessValue.Error">
+            <summary>
+            Gets the error code.
+            </summary>
+            <value>
+            The error code.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ITag">
+            <summary>
+             public interface ITag
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITag.Name">
+            <summary>
+            Gets or sets the tag name.
+            </summary>
+            <value>
+            The tag name.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITag.Read(Siemens.Runtime.HmiUnified.HmiReadType)">
+            <summary>
+            Reads the tag.
+            </summary>
+            <param name="type">The HmiReadType. <seealso cref="T:Siemens.Runtime.HmiUnified.HmiReadType" /></param>
+            <returns>IProcessValue containing name, value, quality, timestamp and error </returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITag.Write(System.Object,Siemens.Runtime.HmiUnified.HmiWriteType)">
+            <summary>
+            Write a tag value synchronously.
+            </summary>
+            <param name="value">The tag value to write</param>
+            <param name="type">The HmiWriteType. <seealso cref="T:Siemens.Runtime.HmiUnified.HmiWriteType" /></param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITag.WriteQCD(System.Object,System.DateTime,System.UInt32,Siemens.Runtime.HmiUnified.HmiWriteType)">
+            <summary>
+            Write a tag value synchronously with quality code and timestamp
+            </summary>
+            <param name="value">The tag as ITag.</param>
+            <param name="timeStamp">The time stamp.</param>
+            <param name="qualityCode">The quality code.</param>
+            <param name="type">The HmiWriteType. <seealso cref="T:Siemens.Runtime.HmiUnified.HmiWriteType" /></param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITag.WriteWithOperatorMessage(System.Object,System.String)">
+            <summary>
+            Write a tag value synchronously with Operator Input Message
+            </summary>
+            <param name="value">The tag value to write</param>
+            <param name="reason">Operator Input Message.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnReadResultHandler">
+            <summary>
+            Callback function if read operation finished
+            </summary>
+            <param name="sender">The read TagSet.</param>
+            <param name="values">List of IProcessValue</param>
+            <param name="completed">if set to <c>true</c> the read operation for all values is completed.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnWriteResultHandler">
+            <summary>
+            Callback function if write operation finished
+            </summary>
+            <param name="sender">The written TagSet.</param>
+            <param name="values">List of IErrorResult</param>
+            <param name="completed">if set to <c>true</c> the write of all values is completed.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnDataChangedHandler">
+            <summary>
+            Callback function if tag value changed
+            </summary>
+            <param name="sender">The subscribed TagSet.</param>
+            <param name="values">List of IProcessValue.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ITagSet">
+            <summary>
+            public interface ITagSet
+            </summary>
+            <seealso cref="T:System.Collections.IEnumerable" />
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSet.ContextId">
+            <summary>
+            Gets or sets the context identifier. Can be used to identify the TagSet in the callback.
+            </summary>
+            <value>
+            The context identifier.
+            </value>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ITagSet.OnReadResult">
+            <summary>
+            Occurs when async read is finished
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ITagSet.OnWriteResult">
+            <summary>
+            Occurs when async write is finished
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ITagSet.OnDataChanged">
+            <summary>
+            Occurs when subscribed tags are changed.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.Add(System.Collections.Generic.ICollection{System.String})">
+            <summary>
+            Adds a list tag names to the TagSet.
+            </summary>
+            <param name="tagNames">Collection of tag names.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.Add(System.String,System.Object)">
+            <summary>
+            Adds a tag name and a tag value to the TagSet. The tag value is used for the Write operation on the TagSet.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+            <param name="value">The tag value to be written.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.Remove(System.String)">
+            <summary>
+            Removes the specified tag by name from TagSet.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.Clear">
+            <summary>
+            Removes all tags from the TagSet 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSet.Count">
+            <summary>
+            Gets the count of tag elements within the TagSet.
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSet.Item(System.String)">
+            <summary>
+            Gets or sets the Tag with the specified tag name.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.Read(Siemens.Runtime.HmiUnified.HmiReadType)">
+            <summary>
+            Reads tag data synchronously.
+            </summary>
+            <param name="type">HmiReadType<seealso cref="T:Siemens.Runtime.HmiUnified.HmiReadType" /></param>
+            <returns>List of ProcessValue objects <seealso cref="T:Siemens.Runtime.HmiUnified.IProcessValue" /> </returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.ReadAsync(Siemens.Runtime.HmiUnified.HmiReadType)">
+            <summary>
+            Reads tag data asynchronously. Get read result via <seealso cref="T:Siemens.Runtime.HmiUnified.OnReadResultHandler" /> 
+            </summary>
+            <param name="type">HmiReadType <seealso cref="T:Siemens.Runtime.HmiUnified.HmiReadType" /></param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.Write(Siemens.Runtime.HmiUnified.HmiWriteType)">
+            <summary>
+            Writes all process values of the TagSet synchronously.
+            </summary>
+            <param name="type">HmiReadType<seealso cref="T:Siemens.Runtime.HmiUnified.HmiWriteType" /></param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.WriteAsync">
+            <summary>
+            Writes all process values of the TagSet asynchronously. Get error result via <seealso cref="T:Siemens.Runtime.HmiUnified.OnWriteResultHandler" />
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.Subscribe">
+            <summary>
+            Subscribes the TagSet. Get notifications via <seealso cref="T:Siemens.Runtime.HmiUnified.OnDataChangedHandler" />
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.CancelSubscribe">
+            <summary>
+            Cancel all subscribed tags from this collection. 
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSet.WriteWithOperatorMessage(System.String)">
+            <summary>
+            Write a tags value synchronously with Operator Input Message
+            </summary>
+            <param name="reason">Operator Input Message.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ITagSetQCDItem">
+            <summary>
+            public interface of ITagSetQCDItem
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSetQCDItem.Name">
+            <summary>
+            Gets or sets the tag  name.
+            </summary>
+            <value>
+            The tag name.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSetQCDItem.Value">
+            <summary>
+            Gets or sets the tag value.
+            </summary>
+            <value>
+            The process value.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSetQCDItem.TimeStamp">
+            <summary>
+            Gets or sets time stamp.
+            </summary>
+            <value>
+            The time stamp.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSetQCDItem.Quality">
+            <summary>
+            Gets or sets the tag quality code.
+            </summary>
+            <value>
+            The quality code.
+            </value>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnWriteCompleteTagSetQCDHandler">
+            <summary>
+            Callback function if TagSet values are written
+            </summary>
+            <param name="sender">The written TagSetQCD object.</param>
+            <param name="pItems">The list with IErrorResult items.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ITagSetQCD">
+            <summary>
+            public interface of ITagSetQCD
+            </summary>
+            <seealso cref="T:System.Collections.IEnumerable" />
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSetQCD.ContextId">
+            <summary>
+            Gets or sets the context identifier. Can be used to identify the TagSet in the callback.
+            </summary>
+            <value>
+            The context identifier.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSetQCD.Add(System.String,System.Object,System.DateTime,System.UInt32)">
+            <summary>
+            Adds the specified tag, value, time stamp and quality code to the TagSet.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+            <param name="value">The tag value.</param>
+            <param name="timeStamp">The tag time stamp.</param>
+            <param name="qualityCode">The tag quality code.</param>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSetQCD.Item(System.String)">
+            <summary>
+            Gets or sets the <see cref="T:Siemens.Runtime.HmiUnified.ITagSetQCDItem"/> with the specified tag name.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+            <returns>ITagSetQCDItem</returns>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ITagSetQCD.OnWriteComplete">
+            <summary>
+            Occurs when async write of TagSet is finished
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSetQCD.Write(Siemens.Runtime.HmiUnified.HmiWriteType)">
+            <summary>
+            Writes process value, time stamp and quality code of contained tags synchronously.
+            </summary>
+            <param name="type">The HmiWriteType.<seealso cref="T:Siemens.Runtime.HmiUnified.HmiWriteType" /></param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSetQCD.WriteAsync">
+            <summary>
+            Writes process value, time stamp and quality code of contained tags asynchronously. Get error result via <see cref="T:Siemens.Runtime.HmiUnified.OnWriteCompleteTagSetQCDHandler"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSetQCD.Remove(System.String)">
+            <summary>
+            Removes the tag from the collection.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITagSetQCD.Clear">
+            <summary>
+            Removes all tags from the TagSet collection
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ITagSetQCD.Count">
+            <summary>
+            Gets the count of tag elements within the TagSet.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnTagAttributesRead">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="tagAttributes"></param>
+            <param name="completed"></param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ITags">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ITags.OnTagAttributesRecieved">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITags.FindAsync(System.Collections.Generic.IList{System.String},System.String,System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="SystemNames"></param>
+            <param name="Filter"></param>
+            <param name="LanguageID"></param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ITags.Find(System.Collections.Generic.IList{System.String},System.String,System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="SystemNames"></param>
+            <param name="Filter"></param>
+            <param name="LanguageID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.HmiTagLoggingValueFlags">
+            <summary>
+            Used for ILoggedTagValue (Flags) in the Read() method
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiTagLoggingValueFlags.Extra">
+            <summary>
+            More than one piece of data that may be hidden exists at same timestamp
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiTagLoggingValueFlags.Calculated">
+            <summary>
+            Calculated value based on a resampling interval or configured logging cycle and optionally a volatile aggregation
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiTagLoggingValueFlags.Bounding">
+            <summary>
+            Specifies that this value is a bounding value
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiTagLoggingValueFlags.NoData">
+            <summary>
+            There is no data available for the given filter set
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiTagLoggingValueFlags.FirstStored">
+            <summary>
+            This is the very first value available in the storage system
+            </summary>
+        </member>
+        <member name="F:Siemens.Runtime.HmiUnified.HmiTagLoggingValueFlags.LastStored">
+            <summary>
+            This is the very last value stored
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ILoggedTagValue">
+            <summary>
+            public interface for ILoggedTagValue
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagValue.Error">
+            <summary>
+            Gets the error.
+            </summary>
+            <value>
+            The error.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagValue.Quality">
+            <summary>
+            Gets or sets the tag quality.
+            </summary>
+            <value>
+            The quality.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagValue.Name">
+            <summary>
+            Gets or sets the name of the tag.
+            </summary>
+            <value>
+            The name of the tag.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagValue.TimeStamp">
+            <summary>
+            Gets or sets the time stamp.
+            </summary>
+            <value>
+            The time stamp.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagValue.Value">
+            <summary>
+            Gets or sets the tag value.
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagValue.Flags">
+            <summary>
+            Get the flags
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ILoggedTag">
+            <summary>
+            public interface for ILoggedTag
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTag.Read(System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            Read the logged data synchronously from the PH system.
+            </summary>
+            <param name="begin">Start timestamp for the oldest LoggedProcessValues</param>
+            <param name="end">End timestamp for the oldest LoggedProcessValues</param>
+            <param name="boundingValue">When boundingValue is set to true, the lower and the upper boundingValue is returned beside the values between start and end time.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTag.Name">
+            <summary>
+            Sets the name of the tag.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnDataChangedTagSetHandler">
+            <summary>
+            Callback function if tag value changed.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="errorCode">The error code.</param>
+            <param name="value">The values.</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnReadCompleteTagSetHandler">
+            <summary>
+            Callback function if read operation finished.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="errorCode">The error code.</param>
+            <param name="values">The list with ILoggedTagValue values.</param>
+            <param name="completed">if set to <c>true</c> [completed].</param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ILoggedTagSet">
+            <summary>
+            public interface for ILoggedTagSet
+            </summary>
+            <seealso cref="T:System.IDisposable" />
+            <seealso cref="T:System.Collections.IEnumerable" />
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagSet.Count">
+            <summary>
+            Gets the tags count.
+            </summary>
+            <value>
+            The count.
+            </value>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ILoggedTagSet.OnDataChanged">
+            <summary>
+            Subscribe event
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ILoggedTagSet.OnReadComplete">
+            <summary>
+            Read complete event
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggedTagSet.ContextId">
+            <summary>
+            Gets or sets the context identifier.
+            </summary>
+            <value>
+            The context identifier.
+            </value>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.Add(System.String)">
+            <summary>
+            Adds the specified tag by name.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.Add(System.Collections.Generic.ICollection{System.String})">
+            <summary>
+            Adds the collection with specified tag names.
+            </summary>
+            <param name="tagNames">The tag names.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.CancelSubscribe">
+            <summary>
+            Cancel all subscribed tags from this collection.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.Clear">
+            <summary>
+            Clears this tag set.
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.Read(System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            Read raw historical data synchronous from the PH system.
+            </summary>
+            <param name="begin">Timestamp for the oldest logged process values.</param>
+            <param name="end">Timestamp for the newest logged process values.</param>
+            <param name="boundingValue">When boundingValue is set to true, the lower and the upper boundingValue is returned beside the values between start and end time.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.ReadAsync(System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            Read raw historical data asynchronous from the PH system.
+            </summary>
+            <param name="begin">Timestamp for the oldest logged process values.</param>
+            <param name="end">Timestamp for the newest logged process values.</param>
+            <param name="boundingValue">When boundingValue is set to true, the lower and the upper boundingValue is returned beside the values between start and end time.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.Remove(System.String)">
+            <summary>
+            Removes the specified tag by name.
+            </summary>
+            <param name="tagName">Name of the tag.</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggedTagSet.Subscribe">
+            <summary>
+            This function is intended to be used to update the client software with new data as it becomes available; e.g.
+            update a trend with new data on a periodic basis.
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ILoggingTagAttributes">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggingTagAttributes.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggingTagAttributes.DisplayName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.ILoggingTagAttributes.DataType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.OnLoggingTagAttributesRead">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="tagAttributes"></param>
+            <param name="completed"></param>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ILoggingTags">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Siemens.Runtime.HmiUnified.ILoggingTags.OnLoggingTagAttributesReadRecieved">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggingTags.FindAsync(System.Collections.Generic.IList{System.String},System.String,System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="SystemNames"></param>
+            <param name="Filter"></param>
+            <param name="LanguageID"></param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.ILoggingTags.Find(System.Collections.Generic.IList{System.String},System.String,System.UInt32)">
+            <summary>
+            
+            </summary>
+            <param name="SystemNames"></param>
+            <param name="Filter"></param>
+            <param name="LanguageID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.ServerStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.GroupSynchronizationStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IObject">
+            <summary>
+            Base interface for IUser and IGroup
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IObject.Id">
+            <summary>
+            Gets id from object
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IObject.Name">
+            <summary>
+            Gets name from object
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IObject.Description">
+            <summary>
+            Gets or sets description from object
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAttribute">
+            <summary>
+            Interface for IAttribute
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAttribute.Name">
+            <summary>
+            Gets or sets name for attribute
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAttribute.Value">
+            <summary>
+            Gets or sets value for attribute
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IUserAccountPolicy">
+            <summary>
+            Interface for IUserAccoutPolicy 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.Language">
+            <summary>
+            Gets or sets language for user account
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.DataLanguage">
+            <summary>
+            Gets or sets data language for user account
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.IsEnabled">
+            <summary>
+            Checks if user is enabled or disabled
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.IsLocked">
+            <summary>
+            Checks if user is locked 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.IsOverrideLock">
+            <summary>
+            Checks if user can be locked
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.CanChangePassword">
+            <summary>
+            Checks or sets if user can change password
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.MustChangePassword">
+            <summary>
+            Checks or sets if user must change password
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.HasExpirationDate">
+            <summary>
+            Checks if user has an expiration date
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.ExpirationDate">
+            <summary>
+            Gets or sets the expiration date on that the user expires
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.HasAlertBeforeExpiration">
+            <summary>
+            Checks if user has an alert before the expiration
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.AlertBeforeExpirationDate">
+            <summary>
+            Gets or sets an alert before the expiration date in days
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.HasPasswordExpiration">
+            <summary>
+            Checks if user has a password expiration
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.PasswordExpirationDays">
+            <summary>
+            Gets or sets password expiration in days
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.HasAlertBeforePasswordExpiration">
+            <summary>
+            Checks if user has an alert before password expiration
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.AlertBeforePasswordExpirationDays">
+            <summary>
+            Gets or sets an alert before password expiration in days 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.HasAutomaticLogoff">
+            <summary>
+            Checks if user has an automatic logoff
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.AutomaticLogoffTimeout">
+            <summary>
+            Gets or sets timeout for automatic logoff in minutes
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.HasAlertBeforeAutomaticLogoff">
+            <summary>
+            Checks if user has an alert before the automatic logoff
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserAccountPolicy.AlertBeforeAutomaticLogoff">
+            <summary>
+            Gets or sets an alert before automatic logoff in minutes
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IUserExtendedInfo">
+            <summary>
+            Interface for IUserExtendedInfo
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.FirstEmailAddress">
+            <summary>
+            Gets or sets first email address for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.SecondEmailAddress">
+            <summary>
+            Gets or sets second email address for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.ThirdEmailAddress">
+            <summary>
+            Gets or sets third email address for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.Initials">
+            <summary>
+            Gets or sets initials for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.LastName">
+            <summary>
+            Gets or sets last name for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.Phone">
+            <summary>
+            Gets or sets phone number for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.Mobile">
+            <summary>
+            Gets or sets mobile number for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.SecurityId">
+            <summary>
+            Gets security id for user, see Microsoft Documentation in Security Identifiers for more details
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.IsImported">
+            <summary>
+            Checks if user is imported 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.IsImportedFromAD">
+            <summary>
+            Checks if user is imported from active directory
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.IsImportedFromGroup">
+            <summary>
+            Checks if user is imported from group
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserExtendedInfo.IsImportedFromLocal">
+            <summary>
+            Checks if user is imported from local
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IUser">
+            <summary>
+            Interface for IUser
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUser.FullName">
+            <summary>
+            Gets or sets full name of user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUser.Version">
+            <summary>
+            Gets version of user
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUser.AddAttribute(System.String,System.String)">
+            <summary>
+            Adds attributes to user with name and value
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUser.RemoveAttribute(System.String)">
+            <summary>
+            Removes an attribute from user by name
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUser.ChangePassword(System.String,System.String)">
+            <summary>
+            Changes password for user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUser.Groups">
+            <summary>
+            Gets a collection of all groups from user
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUser.Attributes">
+            <summary>
+            Gets a collection of all attributes from user
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IGroup">
+            <summary>
+            Interface for IGroup
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroup.Version">
+            <summary>
+            Gets version of group
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroup.SynchronizationStatus">
+            <summary>
+            Gets the synchronization status of group
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroup.SecurityId">
+            <summary>
+            Gets or sets security id for group, see Microsoft Documentation in Security Identifiers for more details
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroup.IsImported">
+            <summary>
+            Checks if group is imported
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IGroup.AddUser(System.String)">
+            <summary>
+            Adds an user to group by name
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IGroup.RemoveUser(System.String)">
+            <summary>
+            Removes an user from group by name
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroup.Users">
+            <summary>
+            Gets a collection of users assigned to group
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAttributeCollection">
+            <summary>
+            Interface for IAttributeCollection
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAttributeCollection.Item(System.String)">
+            <summary>
+            Gets an item from collection by name
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAttributeCollection.Item(System.UInt32)">
+            <summary>
+            Gets an item from collection by index
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAttributeCollection.Count">
+            <summary>
+            Gets size of collection
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IUserCollection">
+            <summary>
+            Interface for IUserCollection 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserCollection.Item(System.String)">
+            <summary>
+            Gets or sets an item from / to collection by name
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserCollection.Item(System.UInt32)">
+            <summary>
+            Gets an item from collection by index
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserCollection.Count">
+            <summary>
+            Gets size of collection
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IGroupCollection">
+            <summary>
+            Interface for IGroupCollection
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroupCollection.Item(System.String)">
+            <summary>
+            Gets or sets a group by name
+            </summary>
+            <param name="groupname">name of group</param>
+            <returns></returns>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroupCollection.Item(System.UInt32)">
+            <summary>
+            Gets an item from collection by index
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IGroupCollection.Count">
+            <summary>
+            Gets size of collection
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IAccountPolicy">
+            <summary>
+            Interface for IAccountPolicy
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.AlphabeticCharMinimum">
+            <summary>
+            Gets or sets the minimum of alphabetic characters in password
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.CountOfPasswordsBeforeReUse">
+            <summary>
+            Gets or sets the count of old passwords before reusing 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.LowerCaseCharMinimum">
+            <summary>
+            Gets or sets the minimum of lower case characters in password
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.MaximumLoginErrors">
+            <summary>
+            Gets or sets the maximum of login errors
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.MaximumPasswordLength">
+            <summary>
+            Gets or sets the maximum password length
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.MinimumPasswordLength">
+            <summary>
+            Gets or sets the minimum password length
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.MinimumDaysBeforePasswordReUse">
+            <summary>
+            Gets or sets the minimum days before an old password can be reused
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.NumericCharMinimum">
+            <summary>
+            Gets or sets the minimum of numeric characters in password
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.SpecialCharMinimum">
+            <summary>
+            Gets or sets the minimum of special characters in password
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.UpperCaseCharMinimum">
+            <summary>
+            Gets or sets the minimum of upper case characters in password
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.UserIdForProvisioningServer">
+            <summary>
+            Gets the user id for provision server
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.EnableLockAfterNAttempts">
+            <summary>
+            Enables or disables the lock after N attempts
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.EnablePasswordHistoryByDays">
+            <summary>
+            Enables or Disables password history by days
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.EnablePasswordHistoryByNumbers">
+            <summary>
+            Enables or disables password history by number of old passwords
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.RestoreAccountPolicyToDefault">
+            <summary>
+            Restores the account policies to default 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IAccountPolicy.PasswordDurationDays">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Siemens.Runtime.HmiUnified.IUserManagement">
+            <summary>
+            Interface for IUserManagement
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserManagement.Users">
+            <summary>
+            Gets a collection of all existing users 
+            </summary>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserManagement.Groups">
+            <summary>
+            Gets a collection of all existing groups
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.CreateUser(System.String,System.String)">
+            <summary>
+            Creates a new user by username and password
+            </summary>
+            <param name="username">name of user</param>
+            <param name="password">password should be conform to the account policies</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.CreateGroup(System.String,System.String)">
+            <summary>
+            Creates a new group by groupname and description
+            </summary>
+            <param name="groupname">name of group</param>
+            <param name="description">description of group</param>
+        </member>
+        <member name="P:Siemens.Runtime.HmiUnified.IUserManagement.AccountPolicy">
+            <summary>
+            Gets the global account policy
+            </summary>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.DeleteUser(System.String)">
+            <summary>
+            Deletes an user by name
+            </summary>
+            <param name="username">name of user to be deleted</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.DeleteGroup(System.String)">
+            <summary>
+            Gets or sets the minimum of alphabetic characters in password
+            </summary>
+            <param name="groupname">name of group to be deleted</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.ImportUsers(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Imports users from a csv file
+            </summary>
+            <param name="filename">name of csv file</param>
+            <param name="bUpdateOnly">if true only existing users will be updated, if false not existing users will be created and added to UMC database</param>
+            <param name="bAutoCreateGroup">if true, all not existing groups users are assigned to will be automatically created and added to UMC database, 
+            if false otherwise</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.ImportGroups(System.String,System.Boolean)">
+            <summary>
+            Imports groups from a csv file
+            </summary>
+            <param name="filename">name of csv file</param>
+            <param name="bUdpateOnly">if true only existing groups will be updated, if false not existing groups will be created and added to UMC database</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.ExportUsers(System.String)">
+            <summary>
+            Exports users to a csv file
+            </summary>
+            <param name="filename">name of csv file</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.ExportGroups(System.String)">
+            <summary>
+            Exports groups to a csv file
+            </summary>
+            <param name="filename">name of file</param>
+        </member>
+        <member name="M:Siemens.Runtime.HmiUnified.IUserManagement.UnlockUser(System.String)">
+            <summary>
+            Unlocks an user previously locked
+            </summary>
+            <param name="name">name of user to be unlocked</param>
+        </member>
+    </members>
+</doc>

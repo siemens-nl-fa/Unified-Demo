@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en' style="height: 100%;">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<script src='./js/webcc.min.js'></script> <!-- mandatory dependency -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body style="height: 100%; margin: 0;">
+	<input type="color" id="colorPicker" name="colorPicker">
+
+	<div>
+		<canvas id="myChart"></canvas>
+	</div>
+
+	<script>
+		const ctx = document.getElementById('myChart');
+
+		const data = "{labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],datasets: [{ label: ' of Vote#s',data: [8, 19, 3, 5, 2, 3],borderWidth: 1}]}";
+
+		const config = {
+			type: 'pie',
+			data: data,
+			options: {}
+		};
+
+		const myChart = new Chart(ctx,
+			config
+		);
+
+		function addData(label, data) {
+			myChart.data.labels.push(label);
+			myChart.data.datasets.forEach((dataset) => {
+				dataset.data.push(data);
+			});
+			myChart.update();
+		}
+
+		function removeData() {
+			myChart.data.labels.pop();
+			myChart.data.datasets.forEach((dataset) => {
+				dataset.data.pop();
+			});
+			myChart.update();
+		}
+
+	</script>
+
+	<button onclick="addData('white', 10)">Click me</button>>
+	<button onclick="removeData()">Click me</button>>
+	
+
+
+
+	<script>
+		document.body.style.overflowX = "hidden";
+		document.body.style.overflowY = "hidden";
+
+		// Convert a WinCC Unified color number to a standard HTML5 color string, 
+		// e.g. "0xFF00FF00" (#Alpha-Red-Green-Blue) to "rgba(0,255,0,255)" (rgba(Red,Green,Blue,Alpha))
+		function toColor(num) {
+			num >>>= 0;
+			var b = num & 0xFF,
+				g = (num & 0xFF00) >>> 8,
+				r = (num & 0xFF0000) >>> 16,
+				a = ((num & 0xFF000000) >>> 24) / 255;
+
+			return 'rgba(' + [r, g, b, a].join(',') + ')';
+		}
+
+		// Convert hex color "#FF00AA" to decimal number for WinCC;
+		function toWinCCColor(hexstring) {
+			var hex = hexstring.replace(/^#/, '');
+			var dec = parseInt(hex, 16);
+			return dec + 4278190080; //Opacity = 4278190080 [255 * (256 * 256 * 256)]
+		}
+
+		function toHexColor(num) {
+			var str = num.toString(16);
+			var hex = str.substring(2);
+			return ('#' + hex);
+		}
+
+		// This is a callback function that is called every time a contract property changes. The function forwards the change to 
+		// other functions so you can see the new value in the control.
+		// - data: object containing a key and a value property. The "key" contains the name of the changed contract property and 
+		//         the "value" contains the new value.
+		function setProperty(data) {
+			// console.log('onPropertyChanged ' + data.key);  // uncomment this line to check whether data is incoming in the browser console from WinCC Unified
+			switch (data.key) {
+				case 'InputWidth':
+					document.getElementById('colorPicker').style.width = data.value + "px";
+					break;
+				case 'InputHeight':
+					document.getElementById('colorPicker').style.height = data.value + "px";
+					break;
+				case 'Color':
+					document.getElementById('colorPicker').value = toHexColor(data.value);
+				case 'Data':
+						
+					break;
+			}
+		}
+
+		function inputColor(event) {
+			let hexcolor = event.target.value;
+			let color = toWinCCColor(hexcolor);
+			WebCC.Properties.Color = color;
+			WebCC.Events.fire('ColorInput', color);
+		}
+
+
+		function changeColor(event) {
+			/*
+			let hexcolor = event.target.value;
+			let color = toWinCCColor(hexcolor);
+			WebCC.Properties.Color = color;
+			WebCC.Events.fire('ColorChange', color);
+			*/
+		}
+
+		////////////////////////////////////////////
+		// Initialize the custom control (without a successful initialization, the CWC will remain empty. Make sure to include the webcc.min.js script!)
+		WebCC.start(
+			// callback function; occurs when the connection is done or failed. 
+			// "result" is a boolean defining if the connection was successfull or not.
+			function (result) {
+				if (result) {
+					console.log('connected successfully');
+
+					//initialize
+					document.getElementById('colorPicker').style.width = WebCC.Properties.InputWidth + "px";
+					document.getElementById('colorPicker').style.height = WebCC.Properties.InputHeight + "px";
+					document.getElementById('colorPicker').value = toHexColor(WebCC.Properties.Color);
+
+					document.getElementById('colorPicker').addEventListener("input", inputColor, false);
+					document.getElementById('colorPicker').addEventListener("change", changeColor, false);
+
+					// Subscribe for value changes
+					WebCC.onPropertyChanged.subscribe(setProperty)
+				}
+				else {
+					console.log('connection failed');
+				}
+			},
+			// Contract (same as manifest.json)
+			{
+				// Methods
+				methods: {},
+				// Events
+				events: ['ColorChange', 'ColorInput'],
+				// Properties
+				properties: {
+					Data: "{labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],datasets: [{ label: ' of Vote#s',data: [8, 19, 3, 5, 2, 3],borderWidth: 1}]}",
+					InputHeight: 40,
+					InputWidth: 160,
+					Color: 4278190335,
+				}
+			},
+			// Include additional Unified dependencies
+			[],
+			// Connection timeout
+			10000
+		);
+
+	</script>
+</body>
+
+</html>

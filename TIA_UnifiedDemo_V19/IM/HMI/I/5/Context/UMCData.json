@@ -1,0 +1,138 @@
+{
+  "version": "2",
+  "users": [
+    {
+      "name": "User",
+      "password": {
+        "hash": "gktTEUuullgPyQgMF8QeIEyqTJF2DxIIGxsJDUG/g6cVS4g5lpJGeIH5ij0LFgiErNpVLeNj7826eqCcg1ddXg==",
+        "salt": "faEJ077qV0/tH/5B2rA0etX7iqyDMqBkqHinUnBMNA4=",
+        "algorithm": "PBKDF2-HMAC-SHA1",
+        "encoding": "utf16le",
+        "iteration": 10000
+      },
+      "fullname": "User",
+      "comment": "Siemens1!",
+      "alertbeforepasswordexpirationdays": 0,
+      "passwordexpirationdays": 0,
+      "autologoff": 30
+    },
+    {
+      "name": "edge",
+      "password": {
+        "hash": "6zx/JZYFwA0k4iAnC0lgi8F3GUvNTRw0nCtA6FrVJZiNofnrFer0cej1QbIjPO72PIs9cJHxsrtxmtNW6o8mVg==",
+        "salt": "ONxiUEyLlbqhVzIJLwgPBW+RXN1fv7SzW+aAVYCHiKo=",
+        "algorithm": "PBKDF2-HMAC-SHA1",
+        "encoding": "utf16le",
+        "iteration": 10000
+      },
+      "fullname": "edge",
+      "comment": "",
+      "alertbeforepasswordexpirationdays": 0,
+      "passwordexpirationdays": 0,
+      "autologoff": 30
+    },
+    {
+      "name": "Admin",
+      "password": {
+        "hash": "Fqv+nUHXuoDIdwWGe5sBJgnrnZ5a3E39DTcFb4OVg63kg4qib9eGRK8E7uzwWOoo97G6wNsouXvTChlqsANIgQ==",
+        "salt": "A2RQpo5In4CdBE8rvkQv9jKJQyvlmkI+dZgbxG7G7lQ=",
+        "algorithm": "PBKDF2-HMAC-SHA1",
+        "encoding": "utf16le",
+        "iteration": 10000
+      },
+      "fullname": "Admin",
+      "comment": "",
+      "alertbeforepasswordexpirationdays": 0,
+      "passwordexpirationdays": 0,
+      "autologoff": 30
+    },
+    {
+      "name": "Operator",
+      "password": {
+        "hash": "N1jNXwWirMyWcX814uY0j+OEvMfjdIQg2Ld4ZdccuGmRiptTkgeeWBJw8gnEG5pn0+iYWstvzbd0nE+O+4lsAQ==",
+        "salt": "Zs3nwp0rzpNSVVA2m6vW4w+SnkVgMyp8y/2dChqUUD8=",
+        "algorithm": "PBKDF2-HMAC-SHA1",
+        "encoding": "utf16le",
+        "iteration": 10000
+      },
+      "fullname": "Operator",
+      "comment": "",
+      "alertbeforepasswordexpirationdays": 0,
+      "passwordexpirationdays": 0,
+      "autologoff": 30
+    },
+    {
+      "name": "Monitor",
+      "password": {
+        "hash": "IKv7NAng3faQxO3mrF5dnm1v/bHHCIEvoxYB/r67t1HWq3Cvn+gpzdxcdmWrFsjE8bFAVVe83IU7CJnk6w4vlg==",
+        "salt": "Uez13foWclI3VqC602yClpf+v+Ux3XifnEFFgVBlXYg=",
+        "algorithm": "PBKDF2-HMAC-SHA1",
+        "encoding": "utf16le",
+        "iteration": 10000
+      },
+      "fullname": "Monitor",
+      "comment": "",
+      "alertbeforepasswordexpirationdays": 0,
+      "passwordexpirationdays": 0,
+      "autologoff": 30
+    }
+  ],
+  "groups": [
+    {
+      "name": "HMI Administrator",
+      "roles": [
+        "HMI Administrator"
+      ],
+      "users": [
+        "User",
+        "edge",
+        "Admin"
+      ]
+    },
+    {
+      "name": "HMI Operator",
+      "users": [
+        "Operator"
+      ]
+    },
+    {
+      "name": "HMI Monitor",
+      "users": [
+        "Monitor"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "HMI Administrator",
+      "rights": [
+        "UM_ADMIN",
+        "UM_IMPORT",
+        "UM_EXPORT",
+        "UM_VIEW",
+        "UM_RESETPWD"
+      ]
+    }
+  ],
+  "globalAccountPolicies": {
+    "enableLockAfterNumberOfAttempts": 0,
+    "enablePasswordHistoryByDays": 0,
+    "enablePasswordHistoryByNumber": 1,
+    "enablePasswordCheck": 1,
+    "maxLoginErrors": 0,
+    "numberOfPasswordBeforeReuse": 5,
+    "passwordAging": 0,
+    "passwordMaxLength": 120,
+    "passwordMinAlphaChar": 0,
+    "passwordMinLength": 8,
+    "passwordMinLowerChar": 0,
+    "passwordMinUpperChar": 0,
+    "passwordMinNumericChar": 0,
+    "passwordMinOtherChar": 0
+  },
+  "umcConfig": {
+    "local": {
+      "domainName": "UM_Domain"
+    }
+  }
+}

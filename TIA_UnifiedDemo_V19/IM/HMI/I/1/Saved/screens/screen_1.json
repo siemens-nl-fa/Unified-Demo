@@ -1,0 +1,2375 @@
+{
+  "v": 1,
+  "env": 0,
+  "props": {
+    "ElementID": 0,
+    "Type": "HmiScreen",
+    "Name": "Screen_1",
+    "Width": 1920,
+    "Height": 1080,
+    "BackColor": 4293256681,
+    "Layers": [
+      {
+        "ElementID": 2,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_0"
+      },
+      {
+        "ElementID": 73,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_1"
+      },
+      {
+        "ElementID": 74,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_2"
+      },
+      {
+        "ElementID": 75,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_3"
+      },
+      {
+        "ElementID": 76,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_4"
+      },
+      {
+        "ElementID": 77,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_5"
+      },
+      {
+        "ElementID": 78,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_6"
+      },
+      {
+        "ElementID": 79,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_7"
+      },
+      {
+        "ElementID": 80,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_8"
+      },
+      {
+        "ElementID": 81,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_9"
+      },
+      {
+        "ElementID": 82,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_10"
+      },
+      {
+        "ElementID": 83,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_11"
+      },
+      {
+        "ElementID": 84,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_12"
+      },
+      {
+        "ElementID": 85,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_13"
+      },
+      {
+        "ElementID": 86,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_14"
+      },
+      {
+        "ElementID": 87,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_15"
+      },
+      {
+        "ElementID": 88,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_16"
+      },
+      {
+        "ElementID": 89,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_17"
+      },
+      {
+        "ElementID": 90,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_18"
+      },
+      {
+        "ElementID": 91,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_19"
+      },
+      {
+        "ElementID": 92,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_20"
+      },
+      {
+        "ElementID": 93,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_21"
+      },
+      {
+        "ElementID": 94,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_22"
+      },
+      {
+        "ElementID": 95,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_23"
+      },
+      {
+        "ElementID": 96,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_24"
+      },
+      {
+        "ElementID": 97,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_25"
+      },
+      {
+        "ElementID": 98,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_26"
+      },
+      {
+        "ElementID": 99,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_27"
+      },
+      {
+        "ElementID": 100,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_28"
+      },
+      {
+        "ElementID": 101,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_29"
+      },
+      {
+        "ElementID": 102,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_30"
+      },
+      {
+        "ElementID": 103,
+        "Type": "HmiLayerPart",
+        "Name": "Layer_31"
+      }
+    ]
+  },
+  "items": [
+    {
+      "props": {
+        "ElementID": 1,
+        "Type": "HmiRectangle",
+        "Name": "Rectangle_2",
+        "Top": 120,
+        "Left": 20,
+        "Width": 500,
+        "Height": 400,
+        "Layer": 2,
+        "BorderWidth": 0,
+        "BackColor": 4294967295,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 3,
+        "Type": "HmiIOField",
+        "Name": "IO field_1",
+        "Height": 40,
+        "Width": 160,
+        "Left": 190,
+        "Top": 160,
+        "Layer": 2
+      }
+    },
+    {
+      "props": {
+        "ElementID": 4,
+        "Type": "HmiIOField",
+        "Name": "IO field_2",
+        "Height": 40,
+        "Width": 160,
+        "Left": 190,
+        "Top": 340,
+        "Layer": 2
+      }
+    },
+    {
+      "props": {
+        "ElementID": 5,
+        "Type": "HmiIOField",
+        "Name": "IO field_3",
+        "Height": 40,
+        "Width": 160,
+        "Left": 190,
+        "Top": 400,
+        "Layer": 2
+      }
+    },
+    {
+      "props": {
+        "ElementID": 6,
+        "Type": "HmiIOField",
+        "Name": "IO field_4",
+        "Height": 40,
+        "Width": 160,
+        "Left": 190,
+        "Top": 460,
+        "Layer": 2
+      }
+    },
+    {
+      "props": {
+        "ElementID": 7,
+        "Type": "HmiTextBox",
+        "Name": "Text box_1",
+        "Top": 120,
+        "Left": 20,
+        "Width": 500,
+        "Height": 40,
+        "Layer": 2,
+        "HorizontalTextAlignment": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 1,
+          "subelement": 0
+        },
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "Padding": {
+          "ElementID": 8,
+          "Type": "HmiPaddingPart",
+          "Left": 20
+        },
+        "Font": {
+          "ElementID": 9,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 1,
+            "subelement": 0
+          }
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 10,
+        "Type": "HmiRectangle",
+        "Name": "Rectangle_1",
+        "Top": 0,
+        "Left": 0,
+        "Width": 1920,
+        "Height": 100,
+        "Layer": 2,
+        "BorderWidth": 0,
+        "BackColor": 4278190120
+      }
+    },
+    {
+      "props": {
+        "ElementID": 11,
+        "Type": "HmiTextBox",
+        "Name": "Text box_2",
+        "Top": 0,
+        "Left": 0,
+        "Width": 605,
+        "Height": 100,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 2,
+          "subelement": 0
+        },
+        "ForeColor": 4294967295,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "Font": {
+          "ElementID": 12,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 2,
+            "subelement": 0
+          }
+        },
+        "Padding": {
+          "ElementID": 13,
+          "Type": "HmiPaddingPart",
+          "Left": 20
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 14,
+        "Type": "HmiTextBox",
+        "Name": "Text box_3",
+        "Top": 160,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 3,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 15,
+        "Type": "HmiTextBox",
+        "Name": "Text box_4",
+        "Top": 340,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 4,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 16,
+        "Type": "HmiTextBox",
+        "Name": "Text box_5",
+        "Top": 400,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 5,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 17,
+        "Type": "HmiTextBox",
+        "Name": "Text box_6",
+        "Top": 460,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 6,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 18,
+        "Type": "HmiSlider",
+        "Name": "Slider_1",
+        "Top": 200,
+        "Left": 190,
+        "Width": 316,
+        "Height": 120,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "StraightScale": {
+          "ElementID": 19,
+          "Type": "HmiStraightScalePart",
+          "Orientation": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 20,
+        "Type": "HmiToggleSwitch",
+        "Name": "Switch_1",
+        "Top": 340,
+        "Left": 360,
+        "Width": 80,
+        "Height": 40,
+        "Layer": 2
+      }
+    },
+    {
+      "props": {
+        "ElementID": 21,
+        "Type": "HmiToggleSwitch",
+        "Name": "Switch_2",
+        "Top": 400,
+        "Left": 360,
+        "Width": 80,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 22,
+        "Type": "HmiToggleSwitch",
+        "Name": "Switch_3",
+        "Top": 460,
+        "Left": 360,
+        "Width": 80,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 23,
+        "Type": "HmiRectangle",
+        "Name": "Rectangle_3",
+        "Top": 120,
+        "Left": 540,
+        "Width": 800,
+        "Height": 870,
+        "Layer": 2,
+        "BorderWidth": 0,
+        "BackColor": 4294967295,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 24,
+        "Type": "HmiRectangle",
+        "Name": "Rectangle_4",
+        "Top": 540,
+        "Left": 20,
+        "Width": 500,
+        "Height": 450,
+        "Layer": 2,
+        "BorderWidth": 0,
+        "BackColor": 4294967295,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 25,
+        "Type": "HmiTextBox",
+        "Name": "Text box_7",
+        "Top": 120,
+        "Left": 540,
+        "Width": 500,
+        "Height": 40,
+        "Layer": 2,
+        "HorizontalTextAlignment": 0,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 7,
+          "subelement": 0
+        },
+        "Padding": {
+          "ElementID": 26,
+          "Type": "HmiPaddingPart",
+          "Left": 20
+        },
+        "Font": {
+          "ElementID": 27,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 1,
+            "subelement": 0
+          }
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 28,
+        "Type": "HmiTextBox",
+        "Name": "Text box_8",
+        "Top": 540,
+        "Left": 20,
+        "Width": 500,
+        "Height": 40,
+        "Layer": 2,
+        "HorizontalTextAlignment": 0,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 8,
+          "subelement": 0
+        },
+        "Padding": {
+          "ElementID": 29,
+          "Type": "HmiPaddingPart",
+          "Left": 20
+        },
+        "Font": {
+          "ElementID": 30,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 1,
+            "subelement": 0
+          }
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 31,
+        "Type": "HmiIOField",
+        "Name": "IO field_5",
+        "Height": 40,
+        "Width": 250,
+        "Left": 190,
+        "Top": 580,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 32,
+        "Type": "HmiIOField",
+        "Name": "IO field_6",
+        "Height": 40,
+        "Width": 250,
+        "Left": 190,
+        "Top": 650,
+        "Layer": 2,
+        "IOFieldType": 0,
+        "BackColor": 4291680737,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 33,
+        "Type": "HmiTextBox",
+        "Name": "Text box_9",
+        "Top": 580,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 9,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 34,
+        "Type": "HmiTextBox",
+        "Name": "Text box_10",
+        "Top": 650,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 10,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 35,
+        "Type": "HmiTextBox",
+        "Name": "Text box_11",
+        "Top": 700,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 11,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 36,
+        "Type": "HmiIOField",
+        "Name": "IO field_7",
+        "Height": 40,
+        "Width": 250,
+        "Left": 190,
+        "Top": 700,
+        "Layer": 2,
+        "TabIndex": 0,
+        "IOFieldType": 0,
+        "BackColor": 4291680737,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 37,
+        "Type": "HmiButton",
+        "Name": "Button_1",
+        "Top": 935,
+        "Left": 190,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 12,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 38,
+        "Type": "HmiTextBox",
+        "Name": "Text box_12",
+        "Top": 785,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 13,
+          "subelement": 0
+        },
+        "HorizontalTextAlignment": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 39,
+        "Type": "HmiLine",
+        "Name": "Line_1",
+        "Top": 775,
+        "Left": 40,
+        "Width": 460,
+        "Height": 0,
+        "X2": 460,
+        "Y2": 0,
+        "Layer": 2,
+        "X1": 0,
+        "Y1": 0,
+        "LineWidth": 3
+      }
+    },
+    {
+      "props": {
+        "ElementID": 40,
+        "Type": "HmiIOField",
+        "Name": "IO field_8",
+        "Top": 835,
+        "Left": 190,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2
+      }
+    },
+    {
+      "props": {
+        "ElementID": 41,
+        "Type": "HmiTextBox",
+        "Name": "Text box_13",
+        "Top": 835,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "HorizontalTextAlignment": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 14,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 42,
+        "Type": "HmiTextBox",
+        "Name": "Text box_14",
+        "Top": 885,
+        "Left": 30,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "HorizontalTextAlignment": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 15,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 43,
+        "Type": "HmiIOField",
+        "Name": "IO field_9",
+        "Top": 885,
+        "Left": 190,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 104,
+        "Type": "HmiIOField",
+        "Name": "IO field_10",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 200,
+        "Layer": 2
+      }
+    },
+    {
+      "props": {
+        "ElementID": 44,
+        "Type": "HmiTextBox",
+        "Name": "Text box_15",
+        "Top": 160,
+        "Left": 550,
+        "Width": 290,
+        "Height": 40,
+        "Layer": 2,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 16,
+          "subelement": 0
+        },
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "Font": {
+          "ElementID": 45,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 3,
+            "subelement": 0
+          }
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 46,
+        "Type": "HmiTextBox",
+        "Name": "Text box_16",
+        "Top": 200,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 17,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 47,
+        "Type": "HmiTextBox",
+        "Name": "Text box_17",
+        "Top": 250,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 18,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 105,
+        "Type": "HmiIOField",
+        "Name": "IO field_11",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 250,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 106,
+        "Type": "HmiIOField",
+        "Name": "IO field_12",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 300,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 48,
+        "Type": "HmiTextBox",
+        "Name": "Text box_18",
+        "Top": 300,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 19,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 107,
+        "Type": "HmiIOField",
+        "Name": "IO field_13",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 350,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 49,
+        "Type": "HmiTextBox",
+        "Name": "Text box_19",
+        "Top": 350,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 20,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 108,
+        "Type": "HmiIOField",
+        "Name": "IO field_14",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 400,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 50,
+        "Type": "HmiTextBox",
+        "Name": "Text box_20",
+        "Top": 400,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 21,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 109,
+        "Type": "HmiIOField",
+        "Name": "IO field_15",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 450,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 51,
+        "Type": "HmiTextBox",
+        "Name": "Text box_21",
+        "Top": 450,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 22,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 110,
+        "Type": "HmiIOField",
+        "Name": "IO field_16",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 500,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 52,
+        "Type": "HmiTextBox",
+        "Name": "Text box_22",
+        "Top": 500,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 23,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 111,
+        "Type": "HmiIOField",
+        "Name": "IO field_17",
+        "Height": 40,
+        "Width": 160,
+        "Left": 680,
+        "Top": 550,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 53,
+        "Type": "HmiTextBox",
+        "Name": "Text box_23",
+        "Top": 550,
+        "Left": 580,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 24,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 54,
+        "Type": "HmiLine",
+        "Name": "Line_2",
+        "Top": 160,
+        "Left": 900,
+        "Width": 0,
+        "Height": 800,
+        "X2": 0,
+        "Y2": 800,
+        "Layer": 2,
+        "X1": 0,
+        "Y1": 0,
+        "LineWidth": 3,
+        "TabIndex": 0,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 55,
+        "Type": "HmiTextBox",
+        "Name": "Text box_24",
+        "Top": 160,
+        "Left": 910,
+        "Width": 290,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 25,
+          "subelement": 0
+        },
+        "Font": {
+          "ElementID": 56,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 3,
+            "subelement": 0
+          }
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 57,
+        "Type": "HmiTextBox",
+        "Name": "Text box_25",
+        "Top": 200,
+        "Left": 940,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 26,
+          "subelement": 0
+        },
+        "Font": {
+          "ElementID": 58,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 4,
+            "subelement": 0
+          }
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 59,
+        "Type": "HmiTextBox",
+        "Name": "Text box_26",
+        "Top": 250,
+        "Left": 980,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 27,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 60,
+        "Type": "HmiTextBox",
+        "Name": "Text box_27",
+        "Top": 350,
+        "Left": 980,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 28,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 61,
+        "Type": "HmiTextBox",
+        "Name": "Text box_28",
+        "Top": 450,
+        "Left": 940,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 29,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 62,
+        "Type": "HmiTextBox",
+        "Name": "Text box_29",
+        "Top": 400,
+        "Left": 940,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 30,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 63,
+        "Type": "HmiTextBox",
+        "Name": "Text box_30",
+        "Top": 500,
+        "Left": 940,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 31,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 64,
+        "Type": "HmiTextBox",
+        "Name": "Text box_31",
+        "Top": 550,
+        "Left": 940,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 32,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 65,
+        "Type": "HmiTextBox",
+        "Name": "Text box_32",
+        "Top": 300,
+        "Left": 980,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 33,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 66,
+        "Type": "HmiTextBox",
+        "Name": "Text box_33",
+        "Top": 600,
+        "Left": 940,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 34,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 67,
+        "Type": "HmiTextBox",
+        "Name": "Text box_34",
+        "Top": 650,
+        "Left": 940,
+        "Width": 160,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 35,
+          "subelement": 0
+        },
+        "Font": {
+          "ElementID": 68,
+          "Type": "HmiFontPart",
+          "Description": {
+            "type": "Ref",
+            "system": 0,
+            "object": 7,
+            "element": 4,
+            "subelement": 0
+          }
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 112,
+        "Type": "HmiIOField",
+        "Name": "IO field_18",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1080,
+        "Top": 250,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 113,
+        "Type": "HmiIOField",
+        "Name": "IO field_19",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1080,
+        "Top": 300,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 114,
+        "Type": "HmiIOField",
+        "Name": "IO field_20",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1080,
+        "Top": 350,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 115,
+        "Type": "HmiIOField",
+        "Name": "IO field_21",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1040,
+        "Top": 400,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 116,
+        "Type": "HmiIOField",
+        "Name": "IO field_22",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1040,
+        "Top": 450,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 117,
+        "Type": "HmiIOField",
+        "Name": "IO field_23",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1040,
+        "Top": 500,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 118,
+        "Type": "HmiIOField",
+        "Name": "IO field_24",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1040,
+        "Top": 550,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 119,
+        "Type": "HmiIOField",
+        "Name": "IO field_25",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1040,
+        "Top": 600,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 69,
+        "Type": "HmiTextBox",
+        "Name": "Text box_35",
+        "Top": 700,
+        "Left": 980,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 36,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 120,
+        "Type": "HmiIOField",
+        "Name": "IO field_26",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1080,
+        "Top": 700,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 121,
+        "Type": "HmiIOField",
+        "Name": "IO field_27",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1080,
+        "Top": 750,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 70,
+        "Type": "HmiTextBox",
+        "Name": "Text box_36",
+        "Top": 750,
+        "Left": 980,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 37,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 122,
+        "Type": "HmiIOField",
+        "Name": "IO field_28",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1080,
+        "Top": 800,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 71,
+        "Type": "HmiTextBox",
+        "Name": "Text box_37",
+        "Top": 800,
+        "Left": 980,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 38,
+          "subelement": 0
+        }
+      }
+    },
+    {
+      "props": {
+        "ElementID": 123,
+        "Type": "HmiIOField",
+        "Name": "IO field_29",
+        "Height": 40,
+        "Width": 160,
+        "Left": 1080,
+        "Top": 850,
+        "Layer": 2,
+        "TabIndex": 0
+      }
+    },
+    {
+      "props": {
+        "ElementID": 72,
+        "Type": "HmiTextBox",
+        "Name": "Text box_38",
+        "Top": 850,
+        "Left": 980,
+        "Width": 100,
+        "Height": 40,
+        "Layer": 2,
+        "RotationCenterX": 0.0,
+        "RotationCenterY": 0.0,
+        "VerticalTextAlignment": 1,
+        "HorizontalTextAlignment": 0,
+        "TabIndex": 0,
+        "Text": {
+          "type": "Ref",
+          "system": 0,
+          "object": 6,
+          "element": 39,
+          "subelement": 0
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "targetElementID": 37,
+      "event": "Tapped",
+      "type": "HmiFunctionList",
+      "handler": {
+        "type": "Ref",
+        "system": 0,
+        "object": 1879506947,
+        "element": 1,
+        "subelement": 0
+      }
+    },
+    {
+      "targetElementID": 43,
+      "prop": "ProcessValue",
+      "event": "PropertyChange",
+      "type": "HmiScript",
+      "handler": {
+        "type": "Ref",
+        "system": 0,
+        "object": 1879506945,
+        "element": 2,
+        "subelement": 0
+      }
+    }
+  ],
+  "scriptmodules": [
+    {
+      "objectID": 1879506945,
+      "type": "JavaScript",
+      "name": "VirtualEventModule",
+      "globalSection": "Ly9JbnNlcnQgZGVmaW5pdGlvbnMgZm9yIGV2ZW50cyBoZXJlDQoNCg==",
+      "scripts": [
+        {
+          "elementID": 2,
+          "name": "IO_field_9_ProcessValue_OnPropertyChanged",
+          "code": "ZXhwb3J0IGZ1bmN0aW9uIElPX2ZpZWxkXzlfUHJvY2Vzc1ZhbHVlX09uUHJvcGVydHlDaGFuZ2VkKGl0ZW0sIHZhbHVlKSB7DQogIFRhZ3MoIlRpbWVab25lX0RCLmlucHV0VGltZVpvbmUuQmlhcyIpLldyaXRlKHZhbHVlIC8gNjApOw0KfQ=="
+        }
+      ]
+    },
+    {
+      "objectID": 1879506946,
+      "type": "JavaScript",
+      "name": "VirtualTriggerModule",
+      "globalSection": "Ly9JbnNlcnQgZGVmaW5pdGlvbnMgZm9yIHNjcmlwdCBkeW5hbWl6YXRpb25zIGhlcmUNCg0K",
+      "scripts": []
+    },
+    {
+      "objectID": 1879506947,
+      "type": "JavaScript",
+      "name": "VirtualFunctionListModule",
+      "globalSection": "Ly8gW0Z1bmN0aW9uTGlzdE1vZHVsZV0NCg==",
+      "scripts": [
+        {
+          "elementID": 1,
+          "name": "Button_1_OnTapped",
+          "code": "ZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIEJ1dHRvbl8xX09uVGFwcGVkKGl0ZW0sIHgsIHksIG1vZGlmaWVycywgdHJpZ2dlcikgew0KSE1JUnVudGltZS5UYWdzLlN5c0ZjdC5TZXRUYWdWYWx1ZSgiVGltZVpvbmVfREIuZXhlY3V0ZSIsIDEpOw0KDQp9"
+        }
+      ]
+    }
+  ],
+  "dynamics": [
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 2,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 3,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 3,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 4,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 4,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 5,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 5,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 6,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 2,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 18,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 3,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 20,
+      "target": "IsAlternateState",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 4,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 21,
+      "target": "IsAlternateState",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 5,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 22,
+      "target": "IsAlternateState",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 8,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 31,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 9,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 32,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 10,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 36,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 12,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 40,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 13,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 43,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 14,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 104,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 15,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 105,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 16,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 106,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 17,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 107,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 18,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 108,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 19,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 109,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 20,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 110,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 22,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 111,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 23,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 112,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 24,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 113,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 25,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 114,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 26,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 115,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 27,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 116,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 28,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 117,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 29,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 118,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 30,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 119,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 31,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 120,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 32,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 121,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 33,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 122,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    },
+    {
+      "attributes": {
+        "tag": {
+          "type": "Ref",
+          "system": 0,
+          "object": 34,
+          "element": 1,
+          "subelement": 0
+        },
+        "isDirect": true,
+        "affectsCurrentQuality": true,
+        "direction": "BiDirectional"
+      },
+      "elementID": 0,
+      "targetElementID": 123,
+      "target": "ProcessValue",
+      "type": "HmiTagDynamic"
+    }
+  ]
+}

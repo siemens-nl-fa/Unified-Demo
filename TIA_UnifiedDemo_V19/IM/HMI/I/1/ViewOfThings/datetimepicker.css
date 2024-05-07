@@ -1,0 +1,705 @@
+body
+{
+    background-color: white;
+}
+
+#DTPBlock
+{
+    position: absolute;
+    z-index: 99999;
+    background-color: white;
+    border: 1px solid #91939A;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    /*height:370px;*/
+    outline: 0;
+    margin: 0 auto;
+    display: table;
+}
+
+#DTPBlock button
+{
+    height: 40px;
+    border: 1px solid #64646A;
+    border-radius: 3px;
+    /* color: white; */
+    cursor: pointer;
+    /* border-bottom: 1px solid #aaa; */
+    background: -webkit-linear-gradient(#F2F4FF,#91939A);
+    /* background-image: -webkit-linear-gradient(top, #49578b, #8b9bd6); */
+    /*background-image: -moz-linear-gradient(top, #49578b, #8b9bd6);
+    background-image: -ms-linear-gradient(top, #49578b, #8b9bd6);
+    background-image: -o-linear-gradient(top, #49578b, #8b9bd6);*/
+    /* background-image: linear-gradient(to top, #49578b, #3a4361); */
+    /* padding: 14px; */
+}
+
+.datesID
+{
+    display: inline-block !important;
+    width: 30px;
+    height:30px;
+    /* margin-top:1px; */
+    line-height:32px;
+    text-align: center;
+    margin-bottom: 8px;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 3px;
+}
+
+.secondaryDatesID
+{
+    opacity: 0.5;
+}
+
+.daysID
+{
+    display: inline-block !important;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    /* font-size: 16px; */
+    /* background-color: #4c5370; */
+    /* color: white; */
+
+}
+
+#timeBlock
+{
+    height: 134px;
+    display: table;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#timeBlockNewStyle
+{
+    height: 134px;
+    display: table;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+#yearMonthDiv
+{
+    line-height: 48px;
+    height: 48px;
+    width: 90%;
+    background-color: #E6E6EB;
+    text-align: center;
+    margin-left: 16px;
+    margin-top: 16px;
+    font-size: 110%;
+    /* color: white; */
+}
+#yearMonthGridDiv
+{
+    line-height: 60px;
+    width: 90%;
+    text-align: center;
+    margin-left: 16px;
+    font-size: 110%;
+    /* color: white; */
+}
+
+#yearMonthDiv:hover
+{
+    cursor: pointer;
+}
+
+#leftNav
+{
+    margin-right: 8px;
+    left: 10px;
+    top: 6px;
+}
+
+#rightNav
+{
+    margin-right: 16px;
+    margin-left: 8px;
+    top: 6px;
+    right: 10px;
+}
+
+#rightnav:hover, #leftnav:hover
+{
+    opacity: 0.6;
+}
+
+#circle
+{
+    display: inline-block;
+    border-radius: 8px;
+    border: 3px solid #64646A;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/*#timeBlock {
+position:absolute;
+bottom:12px;
+}*/
+
+
+.timeBlockClass
+{
+    background-color: white;
+    text-align: center;
+    height: 28px;
+    width: 38px;
+    border: 1px solid #64646A;
+    border-radius: 3px;
+    padding: 0px;
+}
+
+.timeBlockClassForNewStyle {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #64646A;
+    font-size : 110%;
+    font-family: 'Siemens Sans';
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.timeBlockClassSelect
+{
+    height: 27px;
+}
+
+.yearMonthClass
+{
+    margin: 5px;
+}
+
+.yearMonthClass:hover
+{
+    margin: 5px;
+}
+
+#monthDisplay
+{
+    margin-left: 16px;
+}
+#yearMonthDivInternal
+{
+    text-align: left;
+    float: left;
+    width: 50%;
+    font-weight: bold;
+    color: #64646A;
+    /* margin-left: 13%; */
+}
+
+#yearMonthDivInternal:hover
+{
+    /* opacity: 0.6; */
+}
+#navigationDiv
+{
+    text-align: right;
+    float: right;
+    width: 50%;
+    font-weight: bold;
+    color: #64646A;
+}
+
+.monthsGridLine, .yearsGridLine
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.ymGrid
+{
+    /* float:left; */
+    display: inline-block;
+}
+
+.monthsGridElement, .yearsGridElement
+{
+    width: 65px;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+}
+
+.monthsGridElement:hover, .yearsGridElement:hover
+{
+    background-color: #ECECEC;
+    cursor: pointer;
+}
+/*
+.yearsGridElement {
+width:245px;
+height:41px;
+line-height:30px;
+margin:2px;
+text-align:center;
+background-color:aliceblue;
+display:inline-block;
+}
+*/
+
+#monthsGridDiv
+{
+    /* width:30%; */
+    /* margin-top:30px; */
+    padding-top: 5px;
+}
+
+#yearsGridDiv
+{
+    /* width:30%; */
+    /* height:98%; */
+    /* margin-top: 30px; */
+    padding-top: 5px;
+}
+
+
+.navigator
+{
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: -23px;
+}
+
+.navigator:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#navigatorLeft
+{
+    position: relative;
+    left: 14%;
+    /* width: 65px; */
+    height: 12px;
+    line-height: 15px;
+    margin-bottom: 15px;
+    margin-top: 2px;
+    /* margin-right: 7px; */
+    /* text-align: center; */
+    /* background-color: white; */
+    display: inline-block;
+    font-weight: bolder;
+}
+
+#navigatorRight
+{
+    position: relative;
+    left: 50%;
+    font-weight: bolder;
+}
+
+#layer
+{
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ECECEC;
+    z-index: 3;
+}
+
+
+#yearMonthGrid
+{
+    z-index: 10000;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+#yearMonthFooter
+{
+    /* position:absolute; */
+    /* top:88%; */
+    width: 100%;
+    /* height:15%; */
+    /* line-height:15%; */
+}
+
+
+.footerButton:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#yearMonthOK
+{
+    /* height: 25px; */
+    /* width: 60px; */
+    /* position: absolute; */
+    /* top: auto; */
+    /* margin-top: 10px; */
+    /* left: 27%; */
+    /* background-color: #d1d8dd; */
+}
+
+#yearMonthCancel
+{
+    /* height: 25px; */
+    /* width: 60px; */
+    /* position: absolute; */
+    /* top: auto; */
+    /* margin-top: 10px; */
+    /* left: 42%; */
+    /* background-color: #d1d8dd; */
+}
+
+#mainFooter
+{
+    height: 56px;
+    background-color: #E6E6EB;
+    margin-top: 4px;
+    text-align: right;
+}
+
+#daysSeparator
+{
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#timeSeparator, #optionsSeparator
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#daysDiv
+{
+    margin-left: 16px;
+    margin-right: 16px;
+    font-weight: bold;
+}
+#datesBlock
+{
+    margin-right: 16px;
+    float: right;
+    width: 236px;
+}
+#weeksBlock
+{
+    float: left;
+    margin-left: 16px;
+    width: 32px;
+}
+#datesWeeksDiv
+{
+    height: 240px;
+}
+.mainBtns
+{
+    background: -webkit-linear-gradient(#F2F4FF,#91939A);
+    padding: 5px 0px !important;
+    width: 91px;
+    /* margin-left: 3px; */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 16px;
+}
+.upBtns, .downBtns, .ampmBtns
+{
+    border: 1px solid #64646A;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(#F2F4FF,#91939A);
+    height: 30px !important;
+    width: 38px;
+    text-align: center;
+}
+.timeFieldseparator
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 16px;
+    top: -30px;
+}
+.timeFieldseparatorForNewStyle {
+    color: #64646A;
+    font-size: 110%;
+    font-family: 'Siemens Sans';
+    font-weight: bold;
+    top: -83px;
+}
+.ampmBtnsPressed
+{
+    border: 1px solid rgba(100,100,106,0.5);
+    background: -webkit-linear-gradient(#91939A,#F2F4FF);
+}
+.upBtns:hover, .downBtns:hover, .mainBtns:hover
+{
+    background: linear-gradient(to bottom, #F2F4FF,#606166) !important;
+    border: 1px solid rgba(100,100,106,0.5);
+}
+.upBtns, .ampmBtns
+{
+    line-height: 32px;
+}
+.downBtns
+{
+    line-height: 27px;
+}
+
+.ampmBtnsForNewStyle {
+    display: inline-block;
+    position: relative;
+    top: -82px;
+}
+
+.upBtnsForNewStyle {
+    margin-top: 18px;
+}
+
+.downBtnsForNewStyle {
+    margin-top: 5px;
+}
+
+.upIcon
+{
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.downIcon
+{
+     border: solid black;
+     border-width: 0 1px 1px 0;
+     display: inline-block;
+     padding: 3px;
+     transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+}
+.footerButton
+{
+    padding: 5px 0px !important;
+    width: 91px;
+    margin-left: 3px;
+    float: right;
+    margin-top: 3px;
+}
+
+.overlayDiv {
+    z-index: 99998;
+    background: rgba( 0, 0, 0, 0.75 );
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*#footerOK {
+height: 30px;
+width: 60px;
+position: absolute;
+top: auto;
+margin-top:10px;
+left: 360px;
+background-color: #647887;
+}
+
+#footerOK:hover, #footerCancel:hover {
+opacity:0.7;
+cursor:pointer;
+}
+
+#footerCancel {
+color:black;
+height: 30px;
+width: 60px;
+position: absolute;
+top: auto;
+margin-top:10px;
+left: 430px;
+background-color: #647887;
+}*/
+#timeArea {
+    margin-left: 16px;
+    margin-top: 8px;
+}
+.timeAreaElementDim {
+    line-height: 30px !important;
+    width: 35px;
+    border-radius: 3px !important;
+    background: -webkit-linear-gradient(#F2F4FF,#91939A) !important;
+    background: linear-gradient(to bottom, #F2F4FF,#91939A) !important;
+    font-family: inherit;
+    font-size: inherit;
+    height: auto !important;
+    border: 1px solid #64646A;
+    text-align: center;
+    padding: 0 9px 0 9px !important;
+}
+    .timeAreaElementDim:hover {
+        background: linear-gradient(to bottom, #F2F4FF,#606166) !important;
+        border: 1px solid rgba(100,100,106,0.5);
+    }
+.timeAreaTxt {
+    height: 28px;
+    width: 33px;
+    border-radius: 3px !important;
+    border: 1px solid grey;
+    font-family: Siemens Sans, sans-serif !important;
+    font-size: 14px !important;
+    text-indent: 8px;
+}
+.ampmArea {
+    left: 200px;
+    position: relative;
+    top: -52px;
+    display: grid;
+    font-family: Siemens Sans, sans-serif !important;
+    font-size: 14px !important;
+}
+.collapseButton {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    margin-left: 16px;
+}
+.collaspseAreaText {
+    margin-left: 8px;
+}
+.downArrowSvg {
+    position: relative;
+    left: -28px;
+    top: -6px;
+    pointer-events: none;
+}
+#daysBlock::-webkit-inner-spin-button, 
+#daysBlock::-webkit-outer-spin-button,
+#hoursBlock::-webkit-inner-spin-button, 
+#hoursBlock::-webkit-outer-spin-button,
+#minutesBlock::-webkit-inner-spin-button, 
+#minutesBlock::-webkit-outer-spin-button,
+#secondsBlock::-webkit-inner-spin-button, 
+#secondsBlock::-webkit-outer-spin-button,
+#milliSecondsBlock::-webkit-inner-spin-button, 
+#milliSecondsBlock::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+}
+#daysBlock, #hoursBlock, #minutesBlock, #secondsBlock, #milliSecondsBlock {
+    -moz-appearance:textfield;
+}
+.optionsList {
+    margin-left: 32px;
+    padding-left: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+#container
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: auto;
+    margin-bottom: 16px;
+}
+#startTime 
+{
+   width: 50%;
+   text-align: center;
+   height: 40px;
+   background-color: #7DCDF5;
+   margin-top: 16px;
+   margin-right: 8px;
+   cursor: pointer;
+}
+#startTime > div{
+height: 6px;
+    border-bottom: 6px solid #7DCDF5;
+    margin-right: -8px;	
+}
+#endTime > div{
+height: 6px;
+    border-bottom: 6px solid #7DCDF5;
+    margin-left: -8px;	
+}
+.#endTime {
+    width: 50%;
+    text-align: center;
+    background-color: #E6E6EB;
+    height: 40px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+ #startTime span ,#endTime span{
+     display: inline-block;
+    padding-top: 12px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.tabLinks {
+    display: inline-block;
+    background-color: #E6E6EB;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tabLinks:last-child{
+	margin-right: 0px;
+}
+
+.tabLinks:hover {
+    background-color: grey;
+}
+  
+.tabLinks.active {
+    background-color: #7DCDF5;
+}
+  
+.tabContent {
+    display: none;
+    position: relative;
+}
+
+#tabSeparator {
+    height: 3px;
+    background-color: #7DCDF5;
+	margin: 0px;
+	border: none;
+}
+
+.inputFieldBg {
+    position: absolute;
+    top: 16px;
+    height: 48px;
+    background-color: #E6E6EB;
+    z-index: -1;
+}

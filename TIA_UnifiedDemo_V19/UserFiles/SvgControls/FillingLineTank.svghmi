@@ -1,0 +1,233 @@
+<!DOCTYPE svg PUBLIC "-//SIEMENS//DTD SVG 1.0 TIA-HMI//EN" "http://tia.siemens.com/graphics/svg/1.4/dtd/svg14-hmi.dtd">
+<!-- SIMATIC WINCC Copyright (C) Siemens AG 2017. All Rights Reserved. -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink/"
+     xmlns:hmi="http://svg.siemens.com/hmi/"
+     xmlns:hmi-bind="http://svg.siemens.com/hmi/bind/"
+     xmlns:hmi-element="http://svg.siemens.com/hmi/element/"
+     xmlns:hmi-feature="http://svg.siemens.com/hmi/feature/"
+     xmlns:hmi-event="http://svg.siemens.com/hmi/event/"
+     viewBox="0 0 242 350"
+     preserveAspectRatio="none">
+
+	<hmi:self type="widget" displayName="FillingLineTank1" name="extended.FillingLineTank1" version="1.0" performanceClass="L">
+		<hmi:paramDef name="BasicColor"   				type="HmiColor"  default="0xFFd9d9d9"/>
+		<hmi:paramDef name="DisplayConnectionLeft"     	type="boolean" 	 default="true"/>
+		<hmi:paramDef name="DisplayConnectionRight"     type="boolean" 	 default="false"/>
+		<hmi:paramDef name="Minimum"     				type="number"    default="0"/>
+		<hmi:paramDef name="Maximum"     				type="number"    default="100"/>
+		<hmi:paramDef name="FillLevelValue"     		type="number"    default="50"/>
+		<hmi:paramDef name="FillLevelColor"         	type="HmiColor"  default="0xFFbec929"/>
+		<hmi:paramDef name="DisplayFillLevel"     		type="boolean" 	 default="true"/>
+		<hmi:paramDef name="DisplayScale"       		type="boolean" 	 default="true"/>
+		<hmi:paramDef name="IndicatorValue"     		type="number"    default="50"/>
+		<hmi:paramDef name="IndicatorColor"         	type="HmiColor"  default="0xFF55a0b9"/>
+		<hmi:paramDef name="DisplayScale10"       		type="boolean" 	 default="false"/>
+    </hmi:self>	 
+	
+	<defs>
+	  <hmi:localDef name="NormalizedValue" 		type="number" 	hmi-bind:value="{{Converter.Bounds( (ParamProps.FillLevelValue-ParamProps.Minimum)/(ParamProps.Maximum-ParamProps.Minimum), 0.0, 1.0) }}" />
+	  <hmi:localDef name="NormalizedValuePointer" 	type="number"	hmi-bind:value="{{Converter.Bounds( (ParamProps.IndicatorValue-ParamProps.Minimum)/(ParamProps.Maximum-ParamProps.Minimum), 0.0, 1.0) }}" />
+  </defs> 
+  
+  <g id="Ecole_x5F_Tank1">
+    <g id="Zulauf_links" hmi-bind:display="{{ ParamProps.DisplayConnectionLeft ? 'inline' : 'none' }}">
+      <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="4304.9619" y1="53.2378" x2="4336.9619" y2="53.2378" gradientTransform="matrix(0 1 -1 0 77.4375 -4048.8955)">
+        <stop offset="0" stop-color="#777776" />
+        <stop offset="0.2419" stop-color="#A5A5A4" />
+        <stop offset="0.2682" stop-color="#9E9E9D" />
+        <stop offset="0.3634" stop-color="#8D8D8C" />
+        <stop offset="0.4789" stop-color="#81817F" />
+        <stop offset="0.6342" stop-color="#797978" />
+        <stop offset="1" stop-color="#777776" />
+      </linearGradient>
+      <rect x="5.142" y="256.066" fill="url(#SVGID_1_)" stroke="#777776" stroke-width="1.0007" stroke-miterlimit="10" width="38.115" height="32" />
+      <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="5.3394" y1="253.0664" x2="5.3394" y2="291.0664">
+        <stop offset="0" stop-color="#BBBBBB" />
+        <stop offset="0.2672" stop-color="#FFFFFF" />
+        <stop offset="0.3838" stop-color="#D9D9D9" />
+        <stop offset="0.5175" stop-color="#B3B3B2" />
+        <stop offset="0.5877" stop-color="#A5A5A4" />
+        <stop offset="0.6437" stop-color="#949493" />
+        <stop offset="0.7314" stop-color="#7F7F7E" />
+        <stop offset="0.7893" stop-color="#777776" />
+        <stop offset="1" stop-color="#A5A5A4" />
+      </linearGradient>
+      <rect x="1.334" y="253.066" fill="url(#SVGID_2_)" stroke="#777776" stroke-width="3.0021" stroke-miterlimit="10" width="8.011" height="38" />
+    </g>
+    <g id="Zulauf_rechts" hmi-bind:display="{{ ParamProps.DisplayConnectionRight ? 'inline' : 'none' }}">
+      <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="4304.9629" y1="-2900.3555" x2="4336.9629" y2="-2900.3555" gradientTransform="matrix(0 1 1 0 3118.8242 -4048.8955)">
+        <stop offset="0" stop-color="#777776" />
+        <stop offset="0.2419" stop-color="#A5A5A4" />
+        <stop offset="0.2682" stop-color="#9E9E9D" />
+        <stop offset="0.3634" stop-color="#8D8D8C" />
+        <stop offset="0.4789" stop-color="#81817F" />
+        <stop offset="0.6342" stop-color="#797978" />
+        <stop offset="1" stop-color="#777776" />
+      </linearGradient>
+      <rect x="199.411" y="256.067" fill="url(#SVGID_3_)" stroke="#777776" stroke-width="1.0007" stroke-miterlimit="10" width="38.115" height="32" />
+      <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="2958.9336" y1="253.0654" x2="2958.9336" y2="291.0654" gradientTransform="matrix(-1 0 0 1 3196.2617 9.765625e-004)">
+        <stop offset="0" stop-color="#BBBBBB" />
+        <stop offset="0.2672" stop-color="#FFFFFF" />
+        <stop offset="0.3838" stop-color="#D9D9D9" />
+        <stop offset="0.5175" stop-color="#B3B3B2" />
+        <stop offset="0.5877" stop-color="#A5A5A4" />
+        <stop offset="0.6437" stop-color="#949493" />
+        <stop offset="0.7314" stop-color="#7F7F7E" />
+        <stop offset="0.7893" stop-color="#777776" />
+        <stop offset="1" stop-color="#A5A5A4" />
+      </linearGradient>
+      <rect x="233.323" y="253.067" fill="url(#SVGID_4_)" stroke="#777776" stroke-width="3.0021" stroke-miterlimit="10" width="8.011" height="38" />
+    </g>
+    <g id="Korpus">
+      <g id="Sockel">
+        <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="36.3335" y1="308.9346" x2="206.667" y2="308.9346">
+          <stop offset="0" stop-color="#777776" />
+          <stop offset="0.2419" stop-color="#A5A5A4" />
+          <stop offset="0.2682" stop-color="#9E9E9D" />
+          <stop offset="0.3634" stop-color="#8D8D8C" />
+          <stop offset="0.4789" stop-color="#81817F" />
+          <stop offset="0.6342" stop-color="#797978" />
+          <stop offset="1" stop-color="#777776" />
+        </linearGradient>
+        <polygon fill="url(#SVGID_5_)" stroke="#777776" stroke-width="3.0017" stroke-miterlimit="10" points="190.444,317.572      52.555,317.572 36.333,300.297 206.667,300.297" />
+        <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="205.8555" y1="333.0156" x2="37.1445" y2="333.0156">
+          <stop offset="0" stop-color="#777776" />
+          <stop offset="0.3658" stop-color="#797978" />
+          <stop offset="0.5211" stop-color="#81817F" />
+          <stop offset="0.6366" stop-color="#8D8D8C" />
+          <stop offset="0.7318" stop-color="#9E9E9D" />
+          <stop offset="0.7581" stop-color="#A5A5A4" />
+          <stop offset="1" stop-color="#777776" />
+        </linearGradient>
+        <path fill="url(#SVGID_6_)" stroke="#777776" stroke-width="3.0017" stroke-miterlimit="10" d="M205.855,349h-19.467v-20.53     H56.611V349H37.144v-13.068c0-10.422,8.493-18.9,18.932-18.9h130.851c10.438,0,18.929,8.479,18.929,18.9V349z" />
+        <g>
+          <g>
+            <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="38.418" y1="342.002" x2="55.376" y2="342.002">
+              <stop offset="0" stop-color="#BBBBBB" />
+              <stop offset="0.1382" stop-color="#FFFFFF" />
+              <stop offset="0.2142" stop-color="#F7F7F7" />
+              <stop offset="0.3839" stop-color="#E8E8E8" />
+              <stop offset="1" stop-color="#A5A5A4" />
+            </linearGradient>
+            <rect x="38.418" y="336.035" fill="url(#SVGID_7_)" width="16.958" height="11.935" />
+            <path fill="#777776" d="M54.407,337.004v9.997H39.387v-9.997H54.407 M56.345,335.066h-1.938H39.387h-1.938v1.938v9.997v1.938       h1.938h15.021h1.938v-1.938v-9.997V335.066L56.345,335.066z" />
+          </g>
+          <g>
+            <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="187.624" y1="342.002" x2="204.583" y2="342.002">
+              <stop offset="0" stop-color="#BBBBBB" />
+              <stop offset="0.1382" stop-color="#FFFFFF" />
+              <stop offset="0.2142" stop-color="#F7F7F7" />
+              <stop offset="0.3839" stop-color="#E8E8E8" />
+              <stop offset="1" stop-color="#A5A5A4" />
+            </linearGradient>
+            <rect x="187.624" y="336.035" fill="url(#SVGID_8_)" width="16.959" height="11.935" />
+            <path fill="#777776" d="M203.614,337.004v9.997h-15.021v-9.997H203.614 M205.552,335.066h-1.938h-15.021h-1.938v1.938v9.997       v1.938h1.938h15.021h1.938v-1.938v-9.997V335.066L205.552,335.066z" />
+          </g>
+        </g>
+      </g>
+      <g id="Zulauf">
+        <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="106.4795" y1="4.4995" x2="136.5215" y2="4.4995">
+          <stop offset="0" stop-color="#777776" />
+          <stop offset="0.2419" stop-color="#A5A5A4" />
+          <stop offset="0.2682" stop-color="#9E9E9D" />
+          <stop offset="0.3634" stop-color="#8D8D8C" />
+          <stop offset="0.4789" stop-color="#81817F" />
+          <stop offset="0.6342" stop-color="#797978" />
+          <stop offset="1" stop-color="#777776" />
+        </linearGradient>
+        <rect x="106.479" y="1" fill="url(#SVGID_9_)" stroke="#777776" stroke-width="2.0011" stroke-miterlimit="10" width="30.042" height="6.999" />
+        <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="96.4658" y1="8.4985" x2="146.5352" y2="8.4985">
+          <stop offset="0" stop-color="#BBBBBB" />
+          <stop offset="0.1382" stop-color="#FFFFFF" />
+          <stop offset="0.1809" stop-color="#F7F7F7" />
+          <stop offset="0.2764" stop-color="#E8E8E8" />
+          <stop offset="0.7114" stop-color="#A5A5A4" />
+          <stop offset="0.8082" stop-color="#868685" />
+          <stop offset="0.8699" stop-color="#777776" />
+          <stop offset="1" stop-color="#A5A5A4" />
+        </linearGradient>
+        <rect x="96.466" y="4.999" fill="url(#SVGID_10_)" stroke="#777776" stroke-width="2.0011" stroke-miterlimit="10" width="50.069" height="6.999" />
+      </g>
+			<linearGradient id="Tank_1_" gradientUnits="userSpaceOnUse" x1="19.3589" y1="158.501" x2="223.6416" y2="158.501">
+        <stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.267))}}" />
+        <stop offset="0.1301" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.000))}}" />
+        <stop offset="0.2561" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.090))}}" />
+        <stop offset="0.3565" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.116))}}" />
+        <stop offset="0.501" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.190))}}" />
+        <stop offset="0.6713" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.312))}}" />
+        <stop offset="0.8252" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.445))}}" />
+        <stop offset="0.9065" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.445))}}" />
+        <stop offset="1" hmi-bind:stop-color="{{Converter.RGBA(Converter.Darker(ParamProps.BasicColor, 0.267))}}" />
+			</linearGradient>
+      <path id="Tank_2_" fill="url(#Tank_1_)" stroke="#777776" stroke-width="3.0017" stroke-miterlimit="10" d="M222.908,29.745    c-18.229-11.895-46.66-16.91-73.341-18.747H93.433c-26.68,1.837-55.111,6.853-73.341,18.747l-0.733,0.48v259.061    c0,11.548,10.452,16.718,20.812,16.718h162.658c12.449,0,20.813-6.719,20.813-16.718V30.226L222.908,29.745z" />
+      <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="226.4795" y1="34.6943" x2="16.189" y2="34.6944">
+        <stop offset="0" stop-color="#A5A5A4" />
+        <stop offset="0.1301" stop-color="#777776" />
+        <stop offset="0.1918" stop-color="#868685" />
+        <stop offset="0.2886" stop-color="#A5A5A4" />
+        <stop offset="0.7236" stop-color="#E8E8E8" />
+        <stop offset="0.8191" stop-color="#F7F7F7" />
+        <stop offset="0.8618" stop-color="#FFFFFF" />
+        <stop offset="1" stop-color="#BBBBBB" />
+      </linearGradient>
+      <path fill="url(#SVGID_11_)" stroke="#777776" stroke-width="3.0017" stroke-miterlimit="10" d="M226.479,34.971    c0,2.332-1.452,4.223-3.243,4.223H19.429c-1.789,0-3.241-1.891-3.241-4.223v-0.553c0-2.332,1.452-4.223,3.241-4.223h203.807    c1.791,0,3.243,1.891,3.243,4.223V34.971z" />
+    </g>
+    <g id="Fenster" hmi-bind:display="{{ ParamProps.DisplayFillLevel ? 'inline' : 'none' }}">
+      <path id="Basis_1_" fill="#666666" stroke="#666666" stroke-width="6.0042" stroke-miterlimit="10" d="M121.5,292.237H41.389    c-4.406,0-8.011-3.599-8.011-7.998V60.292c0-6.599,5.408-11.997,12.017-11.997H121.5V292.237z" />
+     
+		<linearGradient id="Fuellstand_1_" gradientUnits="userSpaceOnUse" x1="77.439" y1="290.2656" x2="77.439" y2="51.7661">
+			<stop offset="0" hmi-bind:stop-color="{{Converter.RGBA(ParamProps.FillLevelColor)}}" />
+			<stop hmi-bind:offset="{{LocalProps.NormalizedValue}}"	hmi-bind:stop-color="{{Converter.RGBA(ParamProps.FillLevelColor)}}" />
+			<stop hmi-bind:offset="{{LocalProps.NormalizedValue}}" 	stop-color="#666666" />
+			<stop offset="1" stop-color="#666666" />
+		</linearGradient>
+		<rect id="Fuellstand" x="37.384" y="50.266" fill="url(#Fuellstand_1_)" width="80.111" height="238" />
+	 
+      <linearGradient id="Diffusion_unten_1_" gradientUnits="userSpaceOnUse" x1="77.439" y1="288.2656" x2="77.439" y2="52.2661">
+        <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.7" />
+        <stop offset="0.1559" stop-color="#FFFFFF" stop-opacity="0" />
+      </linearGradient>
+      <rect id="Diffusion_unten" x="37.384" y="52.266" fill="url(#Diffusion_unten_1_)" width="80.111" height="236" />
+      <g id="Rahmen">
+        <linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="77.439" y1="292.2373" x2="77.439" y2="48.2954">
+          <stop offset="0.8171" stop-color="#A5A5A4" />
+          <stop offset="0.8684" stop-color="#9E9E9D" />
+          <stop offset="0.942" stop-color="#8B8B8A" />
+          <stop offset="1" stop-color="#777776" />
+        </linearGradient>
+        <path fill="url(#SVGID_12_)" d="M45.395,48.295c-6.609,0-12.017,5.398-12.017,11.997v223.947c0,4.399,3.604,7.998,8.011,7.998     H121.5V48.295H45.395z M117.495,288.238H41.389c-2.209,0-4.005-1.794-4.005-3.999V60.292c0-4.41,3.594-7.998,8.011-7.998h72.1     V288.238z" />
+      </g>
+	  
+      <rect id="Licht" x="44.557" y="45.295" fill-opacity="0.4" fill="#FFFFFF" width="10.014" height="250" />
+
+      <g id="Skala_4_" hmi-bind:display="{{ ParamProps.DisplayScale ? 'inline' : 'none' }}">
+        <line fill="none" stroke="#FFFFFF" stroke-width="2.0014" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="52.266" x2="135.853" y2="288.266" />
+        <line id="_x30_" fill="none" stroke="#FFFFFF" stroke-width="2.0014" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="288.266" x2="155.88" y2="288.266" />
+        <line id="_x35_0" fill="none" stroke="#FFFFFF" stroke-width="2.0014" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="170.266" x2="155.88" y2="170.266" />
+        <g id="_x32_5erSchritte" hmi-bind:display="{{ and( eq( ParamProps.DisplayScale10, 0 ), ParamProps.DisplayScale ) ? 'inline' : 'none' }}">
+          <line id="_x32_5" fill="none" stroke="#FFFFFF" stroke-width="2.0014" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="229.266" x2="155.88" y2="229.266" />
+          <line id="_x37_5" fill="none" stroke="#FFFFFF" stroke-width="2.0014" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="111.266" x2="155.88" y2="111.266" />
+        </g>
+        <g id="_x31_0erSchritte" hmi-bind:display="{{ and( ParamProps.DisplayScale10, ParamProps.DisplayScale ) ? 'inline' : 'none' }}">
+          <line id="_x31_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="264.666" x2="145.866" y2="264.666" />
+          <line id="_x32_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="241.066" x2="145.866" y2="241.066" />
+          <line id="_x33_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="217.467" x2="145.866" y2="217.467" />
+          <line id="_x34_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="193.866" x2="145.866" y2="193.866" />
+          <line id="_x36_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="146.666" x2="145.866" y2="146.666" />
+          <line id="_x37_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="123.065" x2="145.866" y2="123.065" />
+          <line id="_x38_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="99.466" x2="145.866" y2="99.466" />
+          <line id="_x39_0" fill="none" stroke="#FFFFFF" stroke-width="0.7076" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="75.866" x2="145.866" y2="75.866" />
+        </g>
+        <line id="_x31_00" fill="none" stroke="#FFFFFF" stroke-width="2.0014" stroke-linecap="square" stroke-miterlimit="10" x1="135.853" y1="52.266" x2="155.88" y2="52.266" />
+																												
+				<g id="Zeiger_4_" hmi-bind:transform="translate(0, {{117.5 - LocalProps.NormalizedValuePointer * 235}})">
+					<polygon hmi-bind:fill="{{Converter.RGBA(ParamProps.IndicatorColor)}}" points="109.922,164.165 139.245,170.266 109.922,176.366" />
+          <path fill="#FFFFFF" d="M110.817,165.266l24.033,5l-24.033,5V165.266 M109.027,163.065v2.201v10v2.201l2.155-0.448l24.033-5      l8.424-1.752l-8.424-1.752l-24.033-5L109.027,163.065L109.027,163.065z" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

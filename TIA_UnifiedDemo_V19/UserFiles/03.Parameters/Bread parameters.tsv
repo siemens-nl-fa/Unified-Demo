@@ -1,0 +1,5 @@
+ParameterControl	List Separator=		Version=V1	Decimal Symbol=.	Language Count=1	CheckSum=
+ParameterSet_Bread
+PSID	DisplayName:LCID_1033	Salt	Flour	Yeast	CornFlour	Sugar	Nuts	Soda	Beer
+1	Bread Set 1	100	800	500	100	300	10	0	0.5
+2	Bread Set 2	50	400	250	50	150	5	0	0.25

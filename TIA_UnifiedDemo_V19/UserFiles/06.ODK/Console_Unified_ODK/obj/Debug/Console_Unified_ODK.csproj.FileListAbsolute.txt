@@ -1,0 +1,14 @@
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\obj\Debug\Console_Unified_ODK.csprojAssemblyReference.cache
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\obj\Debug\Console_Unified_ODK.csproj.CoreCompileInputs.cache
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Console_Unified_ODK.exe.config
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Console_Unified_ODK.exe
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Console_Unified_ODK.pdb
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Siemens.Engineering.dll
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Siemens.Runtime.HmiUnified.Interfaces.dll
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Siemens.Engineering.Hmi.dll
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Siemens.Engineering.xml
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Siemens.Runtime.HmiUnified.Interfaces.xml
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\bin\Debug\Siemens.Engineering.Hmi.xml
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\obj\Debug\Console_Unified_ODK.csproj.CopyComplete
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\obj\Debug\Console_Unified_ODK.exe
+C:\Users\Siemens\Desktop\Unified_ODK\Console_Unified_ODK\obj\Debug\Console_Unified_ODK.pdb

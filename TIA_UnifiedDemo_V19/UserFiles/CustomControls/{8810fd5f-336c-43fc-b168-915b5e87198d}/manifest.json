@@ -1,0 +1,65 @@
+{
+	"mver": "1.0.0",
+	"control": {
+		"identity": {
+			"name": "ChartJS",
+			"version": "1.0",
+			"displayname": "ChartJS",
+			"icon": "./assets/chartjs-logo.png",
+			"type": "guid://8810Fd5F-336C-43FC-B168-915B5E87198D",
+			"start": "./control/index.html"
+		},
+		"metadata": {
+			"author": "Sander",
+			"keywords": [
+				"ChartJS",
+				"Pie"
+			]
+		},
+		"contracts": {
+			"api": {
+				"methods": {},
+				"events": {
+					"ColorChange": {
+						"arguments": {
+							"color": {
+								"$ref": "#/control/types/Color"
+							}
+						}		
+					},
+					"ColorInput": {
+						"arguments": {
+							"color": {
+								"$ref": "#/control/types/Color"
+							}
+						}		
+					}
+				},
+				"properties": {
+					"Data": {
+						"type": "string",
+						"default": "{labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],datasets: [{ label: ' of Vote#s',data: [8, 19, 3, 5, 2, 3],borderWidth: 1}]}"
+					},
+					"InputWidth": {
+						"type": "number",
+						"default": 160
+					},
+					"InputHeight" :{
+						"type": "number",
+						"default": 40
+					},
+					"Color": {
+						"$ref": "#/control/types/Color",
+						"default": 4278190335
+					}
+				}
+			}
+		},
+		"types": {
+			"Color": {
+				"$id": "http://tia.siemens.com/wincc-unified/types/s/color",
+				"type": "number"
+			}
+		}
+	}
+}

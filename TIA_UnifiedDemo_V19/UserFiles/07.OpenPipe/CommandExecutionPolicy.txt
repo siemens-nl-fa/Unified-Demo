@@ -1,0 +1,5 @@
+cd "C:\Users\Siemens\Desktop\WinCC Unified\Demos\OpenPipe"
+.\openpipe_piechart.ps1
+
+
+set-executionpolicy unrestricted

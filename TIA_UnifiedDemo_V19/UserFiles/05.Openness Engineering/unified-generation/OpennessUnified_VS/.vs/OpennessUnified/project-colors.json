@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "21a41f20-24a4-4ecd-b94e-5916900ba199": {
+      "ProjectGuid": "21a41f20-24a4-4ecd-b94e-5916900ba199",
+      "DisplayName": "OpennessLibrary",
+      "ColorIndex": 0
+    },
+    "5be8230b-bcf7-4578-bb88-58e7784d53a5": {
+      "ProjectGuid": "5be8230b-bcf7-4578-bb88-58e7784d53a5",
+      "DisplayName": "OpennessUnified",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

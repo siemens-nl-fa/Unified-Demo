@@ -1,0 +1,51 @@
+<svg 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:hmi-bind="http://svg.siemens.com/hmi/bind" 
+	xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink" 
+	xmlns:hmi-element="http://svg.siemens.com/hmi/element" 
+	xmlns:hmi-feature="http://svg.siemens.com/hmi/feature" 
+	xmlns:hmi-event="http://svg.siemens.com/hmi/event" 
+	xmlns:hmi="http://svg.siemens.com/hmi/"
+	viewBox="0 0 426 740" 
+	preserveAspectRatio="none">
+  <hmi:self type="Widget" name="extended.MachinePress" displayName="MachinePress" version="1.2.0" 
+	performanceClass="L" >
+    <hmi:paramDef name="BeltMalfunction" type="boolean" default="false" />
+    <hmi:paramDef name="ArmMalfunction" type="boolean" default="false" />
+	<hmi:paramDef name="PositionPressHorizontal" type="number" default="0" />
+	<hmi:paramDef name="PositionPressVertical" type="number" default="0" />
+  </hmi:self>
+  <defs>
+  <hmi:localDef type="number" hmi-bind:value="{{Converter.Bounds(ParamProps.PositionPressHorizontal/100, -1.0, 1.0)}}" name="NormalizedValuePressPositionHorizontal" />
+  <hmi:localDef type="number" hmi-bind:value="{{Converter.Bounds(ParamProps.PositionPressVertical/100, 0.0, 1.0)}}" name="NormalizedValuePressPositionVertical" />
+  </defs>
+  <g id="Housing">
+    <rect id="Housing_Backplate" fill="#A1b5C4" x="114" y="454" width="261" height="221" />
+    <path id="Conveyer_Belt" hmi-bind:fill="{{ParamProps.BeltMalfunction ? '#FF0000' : '#3c464b'}}" fill-rule="evenodd" d="M 71, 543 H 357 a 40, 40, 0, 0, 1, 0, 80 H 71 A 40, 40, 0, 0, 1, 71, 543 Z m 2, 25 H 357 a 15, 15, 0, 0, 1, 0, 30 H 73 A 15, 15, 0, 0, 1, 73, 568 Z" />
+    <path id="Conveyer_Rolls" fill="#becdd7" fill-rule="evenodd" d="M 186.8 ,571 a 12, 12, 0,1, 1-12, 12 A 12, 12, 0, 0, 1, 186.8, 571 Z m 56.4, 0 a 12, 12, 0, 1, 1-12, 12 A 12, 12, 0, 0, 1, 243.2, 571 Z M 74, 571 a 12, 12, 0, 1, 1-12, 12 A 12, 12, 0, 0, 1, 74, 571 Z m 56.4, 0 a 12, 12, 0, 1, 1-12, 12 A 12, 12, 0, 0, 1, 130.4, 571 Z m 169.2, 0 a 12, 12, 0, 1, 1-12, 12 A 12, 12, 0, 0, 1, 299.6, 571 Z m 56.4, 0 a 12, 12, 0, 1, 1-12, 12 A 12, 12, 0, 0, 1, 356, 571 Z" />
+    <path id="Housing_Top" fill="#becdd7" d="M 23,0 H 405 a 10, 10, 0, 0, 1, 10, 10 V 138  H 13 V 10 A 10, 10, 0, 0, 1, 23, 0 Z" />
+    <g id="Roboter Arm" hmi-bind:transform="translate(0,{{0+LocalProps.NormalizedValuePressPositionVertical*115}})">
+      <rect id="Abgerundetes_Rechteck_1" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#879baa'}}" y="272" width="426" height="48" rx="24" ry="24" />
+	  
+      <g id="Press" hmi-bind:transform="translate({{0+LocalProps.NormalizedValuePressPositionHorizontal*130}},0)">
+        <path id="Press_Housing" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#879baa'}}" d="M 213.5, 217 h 0 A 27.5, 27.5, 0, 0, 1, 241, 244.5 V 320 H 186  V 244.5 A 27.5, 27.5, 0, 0, 1, 213.5, 217 Z" />
+        <rect id="Press_Housing_Bottom" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#879baa'}}" x="186" y="309" width="55" height="24" />
+        <path id="Press_Connection_Top" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#788791'}}" fill-rule="evenodd" d="M 186, 333 h 55l-6.875, 11 h -41.25 Z" />
+        <rect id="Press_Middle" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#879baa'}}" x="193" y="344" width="41" height="40" />
+        <path id="Press_Connection_Bottom" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#788791'}}" fill-rule="evenodd" d="M 193, 384 h 41l-5.125, 8 h -30.75 Z" />
+        <rect id="Press_Bottom" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#879baa'}}" x="199" y="392" width="29" height="15" />
+        <rect id="Press_Tip" fill="#41aaaa" x="183" y="407" width="61" height="17" />
+        <circle id="Press_Circle" cx="213.5" cy="245.5" r="21.5" />
+        <circle id="Press_Circle_2" hmi-bind:fill="{{ParamProps.ArmMalfunction ? '#FF0000' : '#879baa'}}" cx="213.5" cy="245.5" r="15.5" />
+      </g>
+    </g>
+	
+    <path id="Housing_Frame" fill="#becdd7" fill-rule="evenodd" d="M 21, 154 H 407 V 730 a 10, 10, 0, 0, 1-10, 10 H 31 a 10, 10, 0, 0, 1 -10 -10 V 154 Z m 34, 31 H 375 V 689 H 55 V 185 Z" />
+    <rect id="Housing_Shadow" fill="#879baa" x="47" y="684" width="337" height="24" />
+    <path id="Housing_Connection" fill="#879baa" fill-rule="evenodd" d="M 13,138 H 415 l -8, 16 H 21 Z" />
+    <rect id="Housing_Bottom_Plate" fill="#becdd7" x="53" y="675" width="322" height="9" />
+	
+  </g>
+  <rect id="Housing_Front" fill="#becdd7" x="39" y="472" width="353" height="27" />
+</svg>

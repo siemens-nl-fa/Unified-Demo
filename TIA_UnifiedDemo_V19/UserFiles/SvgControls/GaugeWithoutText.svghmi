@@ -1,0 +1,56 @@
+<!DOCTYPE svg PUBLIC "-//SIEMENS//DTD SVG 1.0 TIA-HMI//EN" "http://tia.siemens.com/graphics/svg/1.4/dtd/svg14-hmi.dtd">
+<!-- SIMATIC WINCC Copyright (C) Siemens AG 2017. All Rights Reserved. -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:hmi-bind--xlink="http://svg.siemens.com/hmi/bind/xlink/"
+     xmlns:hmi="http://svg.siemens.com/hmi/"
+     xmlns:hmi-bind="http://svg.siemens.com/hmi/bind/"
+     xmlns:hmi-element="http://svg.siemens.com/hmi/element/"
+     xmlns:hmi-feature="http://svg.siemens.com/hmi/feature/"
+     xmlns:hmi-event="http://svg.siemens.com/hmi/event/"
+     viewBox="0 0 400 400"
+     preserveAspectRatio="none">
+
+	<hmi:self type="widget" displayName="NewGauge" name="extended.NewGauge" version="1.0.1" performanceClass="L">
+		<hmi:paramDef name="BackgroundColor"        type="HmiColor"  	default="0xFFFFFFFF"  />
+		<hmi:paramDef name="TextColor"         		type="HmiColor"  	default="0xFF3C3C3C"  />
+		<hmi:paramDef name="ProcessValue"         	type="number"  		default="15"  />
+		<hmi:paramDef name="Minimum"     			type="number"    	default="0"/>
+		<hmi:paramDef name="Maximum"     			type="number"    	default="100"/>
+		<hmi:paramDef name="UnitText"         		type="string"  		default="%"  />
+		<hmi:paramDef name="CaptionText"         	type="string"  		default="WinCC"  />
+    </hmi:self>
+
+     <defs>
+       <hmi:localDef name="NormalizedValue" 	type="number" hmi-bind:value="{{Converter.Bounds( (ParamProps.ProcessValue-ParamProps.Minimum)/(ParamProps.Maximum-ParamProps.Minimum), 0.0, 1.0) }}" />
+	
+	 </defs>
+
+
+
+  <g id="Zeigerinstrument">
+    <g>
+      <path fill="none" stroke="#BBBBBB" stroke-width="6" d="M316.6,358.1c48.5-35.8,79.9-93.4,79.9-158.3C396.5,91.1,308.4,3,199.8,3    C91.1,3,3,91.1,3,199.8c0,65,31.5,122.6,80,158.4" />
+    </g>
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="20.0938" y1="182.2539" x2="379.4424" y2="182.2539">
+      <stop offset="0" stop-color="#CCE2EA" />
+      <stop offset="1" stop-color="#55A0B9" />
+    </linearGradient>
+    <path fill="url(#SVGID_1_)" d="M199.8,20.1c-99.2,0-179.7,80.4-179.7,179.7c0,59.2,28.7,111.7,72.8,144.5l26.2-36.9   c-32.7-24.5-53.8-63.6-53.8-107.6c0-74.3,60.2-134.4,134.4-134.4s134.4,60.2,134.4,134.4c0,44.5-21.6,84-55,108.4l27.1,36.2   c44.3-32.7,73.1-85.3,73.1-144.6C379.4,100.5,299,20.1,199.8,20.1z" />
+    <path id="grüner_Bereich" fill="#6CC829" d="M286.6,81.2l-7.3,10.2c33.3,24.5,54.9,63.9,54.9,108.4c0,44.4-21.5,83.8-54.7,108.2   l7.1,10.3c36.5-26.7,60.2-69.9,60.2-118.6C346.7,151.1,323.1,107.9,286.6,81.2z" />
+    <g hmi-bind:transform="{{rotate(-143+LocalProps.NormalizedValue*286.5,200,200)}}">
+      <polygon id="Zeiger" fill="#777776" points="184.3,178.9 199.8,199.8 215.2,178.9 199.8,46.4" />
+    </g>
+    <path id="Abdeckung_Zeiger" hmi-bind:fill="{{Converter.RGBA(ParamProps.BackgroundColor)}}" d="M199.8,297.8c54.1,0,98-43.9,98-98c0-54.1-43.9-98-98-98s-98,43.9-98,98   C101.8,253.9,145.6,297.8,199.8,297.8" />
+    <g id="Skala_3_">
+      <line fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" x1="199.8" y1="20.9"  x2="199.8" y2="37.6" />
+      <line fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" x1="94.6" 	y1="55"    x2="104.4" y2="68.6" />
+      <line fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" x1="29.6" 	y1="144.5" x2="45.5"  y2="149.7" />
+      <line fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" x1="354" 	y1="249.9" x2="369.9" y2="255.1" />
+      <line fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" x1="29.6" 	y1="255.1" x2="45.5"  y2="249.9" />
+      <line fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" x1="354" 	y1="149.7" x2="369.9" y2="144.5" />
+      <line fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" x1="295.1" y1="68.6"  x2="304.9" y2="55" />
+    </g>
+  </g>
+</svg>

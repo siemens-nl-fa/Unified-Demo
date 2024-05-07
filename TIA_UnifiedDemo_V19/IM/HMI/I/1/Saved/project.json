@@ -1,0 +1,654 @@
+{
+  "v": 1,
+  "env": 0,
+  "start": {
+    "screen": "screen_1",
+    "language": "en-US",
+    "style": "FlatStyle_Bright"
+  },
+  "app": {
+    "cycle": 500
+  },
+  "cycles": [
+    {
+      "objectID": 1879047942,
+      "interval": 5000.0,
+      "name": "T5s"
+    },
+    {
+      "objectID": 1879047940,
+      "interval": 1000.0,
+      "name": "T1s"
+    },
+    {
+      "objectID": 1879047939,
+      "interval": 500.0,
+      "name": "T500ms"
+    },
+    {
+      "objectID": 1879047941,
+      "interval": 2000.0,
+      "name": "T2s"
+    },
+    {
+      "objectID": 1879047943,
+      "interval": 10000.0,
+      "name": "T10s"
+    },
+    {
+      "objectID": 1879047953,
+      "interval": 100.0,
+      "name": "T100ms"
+    },
+    {
+      "objectID": 1879047938,
+      "interval": 250.0,
+      "name": "T250ms"
+    }
+  ],
+  "names": {
+    "tags": [
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 2,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "AlarmData.alarmTriggers.alarm_1"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 3,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "AlarmData.alarmTriggers.alarm_2"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 4,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "AlarmData.alarmTriggers.alarm_3"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 5,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "AlarmData.alarmTriggers.alarm_4"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 8,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "Time_DB.inputTime"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 9,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "Time_DB.currentLocalTime"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 10,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "Time_DB.currentSystemTime"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 12,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "TimeZone_DB.inputTimeZone.Bias"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 13,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "TimeZone_DB.inputTimeZone.DaylightBias"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 14,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.Salt"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 15,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.Flour"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 16,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.Yeast"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 17,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.CornFlour"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 18,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.Sugar"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 19,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.Nuts"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 20,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.Soda"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 22,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBread.Beer"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 23,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.IngredientsBase.Salt"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 24,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.IngredientsBase.Flour"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 25,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.IngredientsBase.Yeast"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 26,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.CornFlour"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 27,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.Sugar"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 28,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.Nuts"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 29,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.Soda"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 30,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.Beer"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 31,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.IngredientsExtra[0]"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 32,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.IngredientsExtra[1]"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 33,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.IngredientsExtra[2]"
+      },
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 34,
+          "element": 1,
+          "subelement": 0
+        },
+        "name": "ParameterData.ParametersBreadComplex.IngredientsExtra[3]"
+      }
+    ],
+    "graphics": [],
+    "screens": [
+      {
+        "id": {
+          "type": "Ref",
+          "system": 0,
+          "object": 1,
+          "element": 0,
+          "subelement": 0
+        },
+        "name": "Screen_1"
+      }
+    ]
+  },
+  "textlibrary": [
+    {
+      "objectID": 6,
+      "texts": [
+        {
+          "elementID": 1,
+          "text": {
+            "en-US": "Alarm triggers"
+          }
+        },
+        {
+          "elementID": 2,
+          "text": {
+            "en-US": "View of Things"
+          }
+        },
+        {
+          "elementID": 3,
+          "text": {
+            "en-US": "Alarm 1"
+          }
+        },
+        {
+          "elementID": 4,
+          "text": {
+            "en-US": "Alarm 2"
+          }
+        },
+        {
+          "elementID": 5,
+          "text": {
+            "en-US": "Alarm 3"
+          }
+        },
+        {
+          "elementID": 6,
+          "text": {
+            "en-US": "Alarm 4"
+          }
+        },
+        {
+          "elementID": 7,
+          "text": {
+            "en-US": "Parameters"
+          }
+        },
+        {
+          "elementID": 8,
+          "text": {
+            "en-US": "Set PLC Time"
+          }
+        },
+        {
+          "elementID": 9,
+          "text": {
+            "en-US": "Set time"
+          }
+        },
+        {
+          "elementID": 10,
+          "text": {
+            "en-US": "Current local time"
+          }
+        },
+        {
+          "elementID": 11,
+          "text": {
+            "en-US": "Current system time"
+          }
+        },
+        {
+          "elementID": 12,
+          "text": {
+            "en-US": "Set time zone"
+          }
+        },
+        {
+          "elementID": 13,
+          "text": {
+            "en-US": "Set time zone"
+          }
+        },
+        {
+          "elementID": 14,
+          "text": {
+            "en-US": "Hour \r\ndifference in minites "
+          }
+        },
+        {
+          "elementID": 15,
+          "text": {
+            "en-US": "Daylight saving \ndifference in minutes"
+          }
+        },
+        {
+          "elementID": 16,
+          "text": {
+            "en-US": "Parameters Bread"
+          }
+        },
+        {
+          "elementID": 17,
+          "text": {
+            "en-US": "Salt"
+          }
+        },
+        {
+          "elementID": 18,
+          "text": {
+            "en-US": "Flour"
+          }
+        },
+        {
+          "elementID": 19,
+          "text": {
+            "en-US": "Yeast"
+          }
+        },
+        {
+          "elementID": 20,
+          "text": {
+            "en-US": "Corn flour"
+          }
+        },
+        {
+          "elementID": 21,
+          "text": {
+            "en-US": "Sugar"
+          }
+        },
+        {
+          "elementID": 22,
+          "text": {
+            "en-US": "Nuts"
+          }
+        },
+        {
+          "elementID": 23,
+          "text": {
+            "en-US": "Soda"
+          }
+        },
+        {
+          "elementID": 24,
+          "text": {
+            "en-US": "Beer"
+          }
+        },
+        {
+          "elementID": 25,
+          "text": {
+            "en-US": "Parameters Bread Complex"
+          }
+        },
+        {
+          "elementID": 26,
+          "text": {
+            "en-US": "Ingredient base"
+          }
+        },
+        {
+          "elementID": 27,
+          "text": {
+            "en-US": "Salt"
+          }
+        },
+        {
+          "elementID": 28,
+          "text": {
+            "en-US": "Yeast"
+          }
+        },
+        {
+          "elementID": 29,
+          "text": {
+            "en-US": "Sugar"
+          }
+        },
+        {
+          "elementID": 30,
+          "text": {
+            "en-US": "Corn flour"
+          }
+        },
+        {
+          "elementID": 31,
+          "text": {
+            "en-US": "Nuts"
+          }
+        },
+        {
+          "elementID": 32,
+          "text": {
+            "en-US": "Soda"
+          }
+        },
+        {
+          "elementID": 33,
+          "text": {
+            "en-US": "Flour"
+          }
+        },
+        {
+          "elementID": 34,
+          "text": {
+            "en-US": "Beer"
+          }
+        },
+        {
+          "elementID": 35,
+          "text": {
+            "en-US": "Ingredients extra"
+          }
+        },
+        {
+          "elementID": 36,
+          "text": {
+            "en-US": "[0]"
+          }
+        },
+        {
+          "elementID": 37,
+          "text": {
+            "en-US": "[1]"
+          }
+        },
+        {
+          "elementID": 38,
+          "text": {
+            "en-US": "[2]"
+          }
+        },
+        {
+          "elementID": 39,
+          "text": {
+            "en-US": "[3]"
+          }
+        }
+      ]
+    }
+  ],
+  "graphiclibrary": [],
+  "widgets": [],
+  "fontlibrary": [
+    {
+      "objectID": 7,
+      "fontdescriptions": [
+        {
+          "elementID": 1,
+          "fontdescription": {
+            "en-US": "Siemens Sans;21;0;0;0;700"
+          }
+        },
+        {
+          "elementID": 2,
+          "fontdescription": {
+            "en-US": "Siemens Sans;64;0;0;0;400"
+          }
+        },
+        {
+          "elementID": 1,
+          "fontdescription": {
+            "en-US": "Siemens Sans;21;0;0;0;700"
+          }
+        },
+        {
+          "elementID": 1,
+          "fontdescription": {
+            "en-US": "Siemens Sans;21;0;0;0;700"
+          }
+        },
+        {
+          "elementID": 3,
+          "fontdescription": {
+            "en-US": "Siemens Sans;14;0;0;0;700"
+          }
+        },
+        {
+          "elementID": 3,
+          "fontdescription": {
+            "en-US": "Siemens Sans;14;0;0;0;700"
+          }
+        },
+        {
+          "elementID": 4,
+          "fontdescription": {
+            "en-US": "Siemens Sans;14;1;0;0;400"
+          }
+        },
+        {
+          "elementID": 4,
+          "fontdescription": {
+            "en-US": "Siemens Sans;14;1;0;0;400"
+          }
+        }
+      ]
+    }
+  ]
+}

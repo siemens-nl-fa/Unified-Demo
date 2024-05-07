@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|c:\\users\\siemens\\desktop\\tia_unifieddemo_v19\\userfiles\\06.odk\\console_unified_odk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|solutionrelative:console_unified_odk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\console_unified_odk\\examples\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|solutionrelative:console_unified_odk\\examples\\start.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\console_unified_odk\\examples\\tagsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|solutionrelative:console_unified_odk\\examples\\tagsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|c:\\users\\siemens\\desktop\\tia_unifieddemo_v19\\userfiles\\06.odk\\console_unified_odk\\examples\\connectionsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|solutionrelative:console_unified_odk\\examples\\connectionsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\console_unified_odk\\examples\\loggingsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2539FDF-2406-4AB0-A754-9F205737970A}|Console_Unified_ODK\\Console_Unified_ODK.csproj|solutionrelative:console_unified_odk\\examples\\loggingsample.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Program.cs",
+              "RelativeDocumentMoniker": "Console_Unified_ODK\\Program.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Program.cs",
+              "RelativeToolTip": "Console_Unified_ODK\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T08:41:35.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoggingSample.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\LoggingSample.cs",
+              "RelativeDocumentMoniker": "Console_Unified_ODK\\Examples\\LoggingSample.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\LoggingSample.cs",
+              "RelativeToolTip": "Console_Unified_ODK\\Examples\\LoggingSample.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T12:09:43.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Start.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\Start.cs",
+              "RelativeDocumentMoniker": "Console_Unified_ODK\\Examples\\Start.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\Start.cs",
+              "RelativeToolTip": "Console_Unified_ODK\\Examples\\Start.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T12:09:43.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConnectionSample.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\ConnectionSample.cs",
+              "RelativeDocumentMoniker": "Console_Unified_ODK\\Examples\\ConnectionSample.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\ConnectionSample.cs",
+              "RelativeToolTip": "Console_Unified_ODK\\Examples\\ConnectionSample.cs",
+              "ViewState": "AQIAAKUAAAAAAAAAAAAowOcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T12:09:44.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TagSample.cs",
+              "DocumentMoniker": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\TagSample.cs",
+              "RelativeDocumentMoniker": "Console_Unified_ODK\\Examples\\TagSample.cs",
+              "ToolTip": "C:\\Users\\Siemens\\Desktop\\TIA_UnifiedDemo_V19\\UserFiles\\06.ODK\\Console_Unified_ODK\\Examples\\TagSample.cs",
+              "RelativeToolTip": "Console_Unified_ODK\\Examples\\TagSample.cs",
+              "ViewState": "AQIAAPIAAAAAAAAAAAAhwIwBAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-19T12:09:44.457Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
